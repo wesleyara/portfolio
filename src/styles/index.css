@@ -1,4 +1,233 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url("/src/components/main/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.header {
+    background-color: rgb(85, 83, 83);
+    overflow: auto;
+    z-index: 2;
+}
+
+.home {
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu-list {
+    color: white;
+    float: left;
+    padding: 20px;
+    font-size: 15pt;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+.menu-list:hover {
+    background-color: #4A6EB5;
+}
+
+.perfil {
+    margin: auto;
+    margin-top: 70px;
+    width: 95%;
+    overflow: hidden;
+    position: relative;
+}
+
+.perfil-image {
+    border-radius: 500px;
+    width: 500px;
+    float: left;
+}
+
+.quemsou {
+    width: 46%;
+    float: left;
+    margin-left: 30px;
+    border-radius: 5px;
+    text-shadow:  2px 2px 2px rgb(85, 83, 83);
+}
+
+.paragrafo {
+    font-size: 14pt;
+}
+
+.redes {
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.redes:hover {
+    background-color: rgb(85, 83, 83);
+    border-radius: 5px;
+}
+
+.sobre {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.description-sobre {
+    float: left;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.description-image {
+    float: right;
+    margin-top: 20px;
+}
+
+.imgSobre {
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.clear {
+    clear: left;
+}
+
+.habilidades {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.description-habilidade {
+    margin-top: 20px;
+    float: left;
+    width: 25%;
+}
+
+.skill {
+    padding: 15px;
+}
+
+.skill:hover {
+    background-color: rgb(85, 83, 83);
+}
+
+.description-hab-images {
+    text-align: center;
+    float: left;
+    margin-left: 100px;
+    width: 320px;
+}
+
+.image-description {
+    float: left;
+    margin-left: 40px;
+    width: 35%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.projetos {
+    width: 95%;
+    height: 320px;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.description-projetos {
+    margin-top: 20px;
+    float: left;
+    width: 30%;
+    text-align: justify;
+}
+
+.project-list {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 225px;
+    overflow: auto;
+}
+
+.rede {
+    padding: 2px;
+}
+
+.rede:hover {
+    background-color: rgb(85, 83, 83);
+}
+
+.description-project {
+    text-align: justify;
+    float: left;
+    margin-left: 50px;
+    width: 400px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projects-imgs {
+    float: left;
+}
+
+.projects {
+    font-size: 35px;
+}
+
+.contato {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.containerBody {
+    overflow: auto;
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px rgb(85, 83, 83);
+}
+
+.contact {
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+}
+
+.contact1 {
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+}
+
+.contact2 {
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
 }

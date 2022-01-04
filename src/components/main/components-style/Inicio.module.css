@@ -1,0 +1,26 @@
+.subTitleInicio {
+  font-size: 26pt;
+}
+
+.redesInicio {
+  text-align: center;
+}
+
+.scroll {
+  color: white;
+}
+
+.scrollContainer {
+  width: 140px;
+  margin: auto;
+}
+
+.mouseInicio {
+  float: left;
+}
+
+.spanInicio {
+  margin-top: 10px;
+  float: right;
+  text-shadow: 2px 2px 2px black;
+}
