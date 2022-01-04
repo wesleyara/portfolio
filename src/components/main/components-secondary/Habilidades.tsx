@@ -10,29 +10,41 @@ export default function Habilidades() {
           <ul className="skill-list">
             <li
               onMouseEnter={htmlenter}
-              onMouseOut={htmlexit}
+              onMouseOut={skillExit}
               className="skill"
             >
               HTML
             </li>
-            <li onMouseEnter={cssenter} onMouseOut={cssexit} className="skill">
+            <li
+              onMouseEnter={cssenter}
+              onMouseOut={skillExit}
+              className="skill"
+            >
               CSS
             </li>
-            <li onMouseEnter={jsenter} onMouseOut={jsexit} className="skill">
+            <li onMouseEnter={jsenter} onMouseOut={skillExit} className="skill">
               JavaScript
             </li>
-            <li onMouseEnter={tsenter} onMouseOut={tsexit} className="skill">
+            <li onMouseEnter={tsenter} onMouseOut={skillExit} className="skill">
               TypeScript
             </li>
-            <li onMouseEnter={pupenter} onMouseOut={pupexit} className="skill">
+            <li
+              onMouseEnter={pupenter}
+              onMouseOut={skillExit}
+              className="skill"
+            >
               Puppeteer
             </li>
-            <li onMouseEnter={nodenter} onMouseOut={nodexit} className="skill">
+            <li
+              onMouseEnter={nodenter}
+              onMouseOut={skillExit}
+              className="skill"
+            >
               Node.js
             </li>
             <li
               onMouseEnter={reactenter}
-              onMouseOut={reactexit}
+              onMouseOut={skillExit}
               className="skill"
             >
               React.js
@@ -78,7 +90,7 @@ function htmlenter() {
     `;
 }
 
-function htmlexit() {
+function skillExit() {
   images.style.cssText = `
         background-color: ;
     `;
@@ -114,20 +126,6 @@ function cssenter() {
     `;
 }
 
-function cssexit() {
-  images.style.cssText = `
-        background-color: ;
-    `;
-
-  descriptionImages.style.cssText = `
-        background-color: ;
-    `;
-
-  images.innerHTML = "";
-
-  descriptionImages.innerHTML = "";
-}
-
 function jsenter() {
   images.style.cssText = `
         background-color: rgb(85, 83, 83);
@@ -148,20 +146,6 @@ function jsenter() {
         JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. O JavaSript manipula o comportamento de páginas web.
         </p>
     `;
-}
-
-function jsexit() {
-  images.style.cssText = `
-        background-color: ;
-    `;
-
-  descriptionImages.style.cssText = `
-        background-color: ;
-    `;
-
-  images.innerHTML = "";
-
-  descriptionImages.innerHTML = "";
 }
 
 function pupenter() {
@@ -186,20 +170,6 @@ function pupenter() {
     `;
 }
 
-function pupexit() {
-  images.style.cssText = `
-        background-color: ;
-    `;
-
-  descriptionImages.style.cssText = `
-        background-color: ;
-    `;
-
-  images.innerHTML = "";
-
-  descriptionImages.innerHTML = "";
-}
-
 function nodenter() {
   images.style.cssText = `
         background-color: rgb(85, 83, 83);
@@ -220,20 +190,6 @@ function nodenter() {
         Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.
         </p>
     `;
-}
-
-function nodexit() {
-  images.style.cssText = `
-        background-color: ;
-    `;
-
-  descriptionImages.style.cssText = `
-        background-color: ;
-    `;
-
-  images.innerHTML = "";
-
-  descriptionImages.innerHTML = "";
 }
 
 function tsenter() {
@@ -258,20 +214,6 @@ function tsenter() {
     `;
 }
 
-function tsexit() {
-  images.style.cssText = `
-        background-color: ;
-    `;
-
-  descriptionImages.style.cssText = `
-        background-color: ;
-    `;
-
-  images.innerHTML = "";
-
-  descriptionImages.innerHTML = "";
-}
-
 function reactenter() {
   images.style.cssText = `
         background-color: rgb(85, 83, 83);
@@ -292,20 +234,6 @@ function reactenter() {
         O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.
         </p>
     `;
-}
-
-function reactexit() {
-  images.style.cssText = `
-        background-color: ;
-    `;
-
-  descriptionImages.style.cssText = `
-        background-color: ;
-    `;
-
-  images.innerHTML = "";
-
-  descriptionImages.innerHTML = "";
 }
 
 // Final das habilidades.
