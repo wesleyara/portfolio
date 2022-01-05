@@ -1,4 +1,5 @@
 import React from "react";
+import style from "../components-style/Projetos.module.css";
 import githubImg from "../images/image-github.png";
 
 export default function Projetos() {
@@ -17,6 +18,7 @@ export default function Projetos() {
               target="_blank"
               href="https://github.com/wesleyara"
               rel="noreferrer"
+              className={style.link}
             >
               GitHub
             </a>
