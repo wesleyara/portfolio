@@ -141,6 +141,7 @@ body {
   float: left;
   margin-left: 100px;
   width: 320px;
+  background-color: rgb(85, 83, 83);
 }
 
 .image-description {
@@ -149,6 +150,7 @@ body {
   width: 35%;
   padding: 20px;
   text-align: justify;
+  background-color: rgb(85, 83, 83);
 }
 
 .projetos {
@@ -174,6 +176,10 @@ body {
   overflow: auto;
 }
 
+.lingBox {
+  display: inline_block;
+}
+
 .rede {
   padding: 2px;
 }
@@ -188,6 +194,7 @@ body {
   margin-left: 50px;
   width: 400px;
   padding: 20px;
+  background-color: rgb(85, 83, 83);
 }
 
 a {
