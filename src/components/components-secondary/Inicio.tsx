@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../components-style/Inicio.module.css";
+import style from "../components-style/Inicio.module.scss";
 import linkedinImg from "../images/image-linkedin.png";
 import perfilImg from "../images/image-perfil.jpg";
 import githubImg from "../images/image-github.png";

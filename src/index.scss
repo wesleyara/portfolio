@@ -11,7 +11,7 @@ ul {
 }
 
 body {
-  background-image: url("/src/components/main/images/background.jpg");
+  background-image: url("../src/components/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -39,10 +39,10 @@ body {
   font-size: 15pt;
   margin-left: 1px;
   cursor: pointer;
-}
 
-.menu-list:hover {
-  background-color: #4a6eb5;
+  .menu-list:hover {
+    background-color: #4a6eb5;
+  }
 }
 
 .perfil {
@@ -75,11 +75,11 @@ body {
   margin-left: 10px;
   overflow: hidden;
   padding: 2px;
-}
 
-.redes:hover {
-  background-color: rgb(85, 83, 83);
-  border-radius: 5px;
+  .redes:hover {
+    background-color: rgb(85, 83, 83);
+    border-radius: 5px;
+  }
 }
 
 .sobre {
@@ -122,10 +122,10 @@ body {
 
 .skill {
   padding: 15px;
-}
 
-.skill:hover {
-  background-color: rgb(85, 83, 83);
+  .skill:hover {
+    background-color: rgb(85, 83, 83);
+  }
 }
 
 .skill-list {
@@ -182,10 +182,10 @@ body {
 
 .rede {
   padding: 2px;
-}
 
-.rede:hover {
-  background-color: rgb(85, 83, 83);
+  .rede:hover {
+    background-color: rgb(85, 83, 83);
+  }
 }
 
 .description-project {

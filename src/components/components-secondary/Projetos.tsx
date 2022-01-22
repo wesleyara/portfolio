@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import style from "../components-style/Projetos.module.css";
+import style from "../components-style/Projetos.module.scss";
 import githubImg from "../images/image-github.png";
 import {
   ProjetoLoja,
