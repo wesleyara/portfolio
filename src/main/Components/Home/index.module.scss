@@ -1,0 +1,122 @@
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 greenyellow);
+  }
+  to {
+    filter: drop-shadow(0 0 10px greenyellow);
+  }
+}
+
+.profile {
+  margin: auto;
+  margin-top: 70px;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  color: greenyellow;
+
+  .profileImage {
+    border-radius: 500px;
+    width: 500px;
+    float: left;
+  }
+
+  .who {
+    width: 50%;
+    float: left;
+    margin-left: 30px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .networks {
+    margin-left: 10px;
+    font-size: 40px;
+    padding: 2px;
+    color: greenyellow;
+  }
+
+  .networks:hover {
+    animation: neon 2s alternate infinite ease-in-out;
+  }
+
+  .networksBx {
+    text-align: center;
+  }
+
+  .scroll {
+    color: white;
+  }
+
+  .scrollContainer {
+    width: 140px;
+    margin: auto;
+
+    svg {
+      float: left;
+      font-size: 40px;
+      color: greenyellow;
+    }
+
+    .spanHome {
+      margin-top: 10px;
+      float: right;
+      color: greenyellow;
+    }
+  }
+
+  .scrollContainer:hover {
+    animation: neon 2s alternate infinite ease-in-out;
+  }
+
+  @keyframes rot {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .bxAnimation {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-90%, -75%);
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    background-color: greenyellow;
+    animation: rot 3s ease-in-out infinite;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+    .profileImage {
+      width: 350px;
+    }
+
+    .who {
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .profile {
+    margin-top: 20px;
+
+    .profileImage {
+      width: 300px;
+    }
+  }
+}

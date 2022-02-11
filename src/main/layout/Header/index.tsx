@@ -2,27 +2,62 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="header">
-      <ul className="home">
-        <a href="#">
-          <li className="menu-list">Início</li>
+    <div className="header" data-aos="fade-down">
+      <input
+        className="inputCheck"
+        type="checkbox"
+        name="checkbx"
+        id="hamburguerid"
+      ></input>
+      <div className="home">
+        <ul>
+          <a href="#">
+            <li className="menu-list">Home</li>
+          </a>
+        </ul>
+      </div>
+
+      <label htmlFor="hamburguerid">
+        <div className="container-hamburguer">
+          <div className="hamburguer"></div>
+        </div>
+      </label>
+
+      <h1 className="title-hamburguer">Meu Portfólio</h1>
+
+      <ul className="menu-hamburguer">
+        <label htmlFor="hamburguerid">
+          <a href="#about">
+            <li className="list-hamburguer">ABOUT</li>
+          </a>
+        </label>
+        <a href="#hardskills">
+          <li className="list-hamburguer">HARD SKILLS</li>
+        </a>
+        <a href="#projects">
+          <li className="list-hamburguer">PROJECTS</li>
+        </a>
+        <a href="#contacts">
+          <li className="list-hamburguer">CONTACTS</li>
         </a>
       </ul>
 
-      <ul className="menu">
-        <a href="#sobre">
-          <li className="menu-list">Sobre</li>
-        </a>
-        <a href="#habilidades">
-          <li className="menu-list">Habilidades</li>
-        </a>
-        <a href="#projetos">
-          <li className="menu-list">Projetos</li>
-        </a>
-        <a href="#contato">
-          <li className="menu-list">Contato</li>
-        </a>
-      </ul>
+      <div className="menu">
+        <ul>
+          <a href="#about">
+            <li className="menu-list">About</li>
+          </a>
+          <a href="#hardskills">
+            <li className="menu-list">Hard Skills</li>
+          </a>
+          <a href="#projects">
+            <li className="menu-list">Projects</li>
+          </a>
+          <a href="#contacts">
+            <li className="menu-list">Contacts</li>
+          </a>
+        </ul>
+      </div>
     </div>
   );
 }

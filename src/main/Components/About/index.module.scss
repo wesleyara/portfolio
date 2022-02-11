@@ -1,0 +1,46 @@
+.about {
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+
+  .aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .descriptionAbout {
+      margin-top: 20px;
+      width: 60%;
+    }
+
+    .descriptionImage {
+      margin-top: 20px;
+    }
+
+    .imgAbout {
+      border-radius: 5px;
+      border: 2px solid greenyellow;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .about {
+
+    .aboutContainer {
+
+      .descriptionAbout {
+        width: 100%;
+      }
+
+      .descriptionImage {
+        text-align: center;
+      }
+
+      .imgAbout {
+        width: 90%;
+      }
+    }
+  }
+}

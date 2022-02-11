@@ -6,16 +6,18 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsMouse } from "react-icons/bs";
 
-export default function Inicio() {
+export default function Home() {
   return (
-    <div className={style.perfil}>
-      <img className={style.perfilImage} src={perfilImg} alt="foto" />
-      <div className={style.quemsou}>
-        <h2 className="subTitleInicio">Olá! me chamo Wesley Araújo</h2>
+    <div className={style.profile} data-aos="fade-down">
+      <img className={style.profileImage} src={perfilImg} alt="foto" />
+      <div className={style.who} data-aos="fade-up">
+        <h1 className="title typing-animation">
+          &lt;Olá! me chamo Wesley Araújo /&gt;
+        </h1>
         <br />
-        <p className="paragrafo">Desenvolvedor Web</p>
+        <p className="paragraph">Desenvolvedor Web</p>
         <br />
-        <p className="paragrafo">
+        <p className="paragraph">
           Bem-vindo ao meu portfólio, estou sempre em busca de conhecimento e
           novas experiências. Role para baixo e descubra mais sobre mim!
         </p>
@@ -23,27 +25,27 @@ export default function Inicio() {
         <br />
         <br />
         <br />
-        <div className={style.redesInicio}>
+        <div className={style.networksBx}>
           <a
             href="https://github.com/wesleyara"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub className={style.redes} />
+            <FaGithub className={style.networks} />
           </a>
           <a
             href="https://www.linkedin.com/in/wesley-gomes-de-ara%C3%BAjo-534a66221/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin className={style.redes} />
+            <FaLinkedin className={style.networks} />
           </a>
           <a
             href="mailto:wesleyara.contato@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineMail className={style.redes} />
+            <AiOutlineMail className={style.networks} />
           </a>
         </div>
         <br />
@@ -52,11 +54,12 @@ export default function Inicio() {
         <br />
         <br />
         <div className={style.scrollContainer}>
-          <a href="#sobre" rel="noreferrer">
+          <a href="#about" rel="noreferrer">
             <BsMouse />
-            <span className={style.spanInicio}>Role para baixo</span>
+            <span className={style.spanHome}>Role para baixo</span>
           </a>
         </div>
+        <div className={style.bxAnimation}></div>
       </div>
     </div>
   );
