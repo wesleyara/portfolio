@@ -11,7 +11,7 @@ ul {
 }
 
 body {
-  background-image: url("../src/components/images/background.jpg");
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -45,63 +45,8 @@ body {
   background-color: #4a6eb5;
 }
 
-.perfil {
-  margin: auto;
-  margin-top: 70px;
-  width: 95%;
-  overflow: hidden;
-  position: relative;
-}
-
-.perfil-image {
-  border-radius: 500px;
-  width: 500px;
-  float: left;
-}
-
-.quemsou {
-  width: 46%;
-  float: left;
-  margin-left: 30px;
-  border-radius: 5px;
-  text-shadow: 2px 2px 2px rgb(85, 83, 83);
-}
-
 .paragrafo {
   font-size: 14pt;
-}
-
-.redes {
-  margin-left: 10px;
-  overflow: hidden;
-  padding: 2px;
-}
-
-.redes:hover {
-  background-color: rgb(85, 83, 83);
-  border-radius: 5px;
-}
-
-.sobre {
-  width: 95%;
-  margin: auto;
-  margin-top: 50px;
-}
-
-.description-sobre {
-  float: left;
-  margin-top: 20px;
-  width: 60%;
-}
-
-.description-image {
-  float: right;
-  margin-top: 20px;
-}
-
-.imgSobre {
-  border-radius: 5px;
-  border: 2px solid white;
 }
 
 .clear {
@@ -208,38 +153,4 @@ a {
 
 .projects {
   font-size: 35px;
-}
-
-.contato {
-  width: 95%;
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
-}
-
-.containerBody {
-  overflow: auto;
-  margin: auto;
-  width: 60%;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  text-shadow: 2px 2px 2px rgb(85, 83, 83);
-}
-
-.contact {
-  margin-top: 20px;
-  margin-left: 50px;
-  float: left;
-}
-
-.contact1 {
-  margin-top: 20px;
-  margin-left: 50px;
-  float: left;
-}
-
-.contact2 {
-  margin-top: 20px;
-  margin-left: 50px;
-  float: left;
 }

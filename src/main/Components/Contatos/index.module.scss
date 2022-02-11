@@ -1,0 +1,19 @@
+.contato {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.containerContact {
+  margin: auto;
+  width: 60%;
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px rgb(85, 83, 83);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+
+  svg {
+    font-size: 50px;
+  }
+}
