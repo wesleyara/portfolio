@@ -100,7 +100,7 @@
     margin-top: 30px;
 
     .profileImage {
-      width: 350px;
+      width: 300px;
     }
 
     .who {
@@ -108,15 +108,20 @@
       margin-top: 30px;
       margin-left: 0px;
     }
+
+    .bxAnimation {
+      width: 50px;
+      height: 50px;
+      top: 75%;
+      left: 80%;
+      transform: translate(-80%, -75%);
+
+    }
   }
 }
 
 @media screen and (max-width: 350px) {
   .profile {
     margin-top: 20px;
-
-    .profileImage {
-      width: 300px;
-    }
   }
 }
