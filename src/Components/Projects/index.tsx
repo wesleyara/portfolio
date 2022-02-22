@@ -16,7 +16,7 @@ export default function Projects() {
   return (
     <>
       <div id="projects"></div>
-      <div className={style.projects} data-aos="fade-up">
+      <div className={style.projects} data-aos="fade-down">
         <h2 className="subTitle">Projects</h2>
         <div className={style.projectsContainer}>
           <a
