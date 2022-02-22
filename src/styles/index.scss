@@ -61,13 +61,13 @@ body {
 }
 
 .hamburguer {
-  content: url(./main/Assets/Images/menu-regular-60.png);
+  content: url(/menu-regular-60.png);
 }
 
 #hamburguerid:checked ~ label .hamburguer {
   position: absolute;
   background-color: black;
-  content: url(./main/Assets/Images/x-regular-60.png);
+  content: url(/x-regular-60.png);
   box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
   z-index: 5;
 }

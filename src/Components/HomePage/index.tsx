@@ -5,11 +5,19 @@ import perfilImg from "../../Assets/Images/image-perfil.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsMouse } from "react-icons/bs";
+import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className={style.profile} data-aos="fade-down">
-      <img className={style.profileImage} src={perfilImg} alt="foto" />
+      <span className={style.profileImage}>
+        <Image
+          layout="responsive"
+          className={style.profileImage}
+          src={perfilImg}
+          alt="foto"
+        />
+      </span>
       <div className={style.who} data-aos="fade-up">
         <h1 className="title typing-animation">
           &lt;Olá! me chamo Wesley Araújo /&gt;

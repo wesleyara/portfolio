@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "./index.module.scss";
 import portfolio from "../../Assets/Images/portfolio.png";
@@ -9,6 +10,7 @@ import chilipeppers from "../../Assets/Images/chilipeppers.png";
 import matpackage from "../../Assets/Images/matpackage.png";
 import erem from "../../Assets/Images/erem.png";
 import churras from "../../Assets/Images/churras.png";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -24,7 +26,12 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={portfolio} alt="" />
+              <Image
+                layout="responsive"
+                className={style.img}
+                src={portfolio}
+                alt=""
+              />
               <h2>Portfólio</h2>
               <div>
                 {" "}
@@ -51,7 +58,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={reactCRUD} alt="" />
+              <Image className={style.img} src={reactCRUD} alt="" />
               <h2>React CRUD</h2>
               <div>
                 {" "}
@@ -78,7 +85,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={calculadora} alt="" />
+              <Image className={style.img} src={calculadora} alt="" />
               <h2>Calculadora de Preço Médio Alvo</h2>
               <div>
                 {" "}
@@ -105,7 +112,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={paginaCaptura} alt="" />
+              <Image className={style.img} src={paginaCaptura} alt="" />
               <h2>Página de captura</h2>
               <div>
                 <img
@@ -127,7 +134,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={chilipeppers} alt="" />
+              <Image className={style.img} src={chilipeppers} alt="" />
               <h2>Chili Peppers Pizzaria</h2>
               <div>
                 {" "}
@@ -154,7 +161,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={matpackage} alt="" />
+              <Image className={style.img} src={matpackage} alt="" />
               <h2>Mat Package</h2>
               <div>
                 <img
@@ -172,7 +179,7 @@ export default function Projects() {
           <a target="_blank" href="https://eremcjf.com.br/" rel="noreferrer">
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={erem} alt="" />
+              <Image className={style.img} src={erem} alt="" />
               <h2>EREM Site</h2>
               <div>
                 {" "}
@@ -199,7 +206,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={churras} alt="" />
+              <Image className={style.img} src={churras} alt="" />
               <h2>Churrascômetro</h2>
               <div>
                 {" "}
@@ -226,7 +233,7 @@ export default function Projects() {
           >
             {" "}
             <div className={style.projectsBx} data-aos="fade-up">
-              <img className={style.img} src={cpf} alt="" />
+              <Image className={style.img} src={cpf} alt="" />
               <h2>CPF generator</h2>
               <div>
                 {" "}
