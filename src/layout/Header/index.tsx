@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
@@ -11,9 +12,7 @@ export default function Header() {
       ></input>
       <div className="home">
         <ul>
-          <a href="#">
-            <li className="menu-list">Home</li>
-          </a>
+          <h2>&lt;Portfólio /&gt;</h2>
         </ul>
       </div>
 
@@ -23,39 +22,31 @@ export default function Header() {
         </div>
       </label>
 
-      <h1 className="title-hamburguer">Meu Portfólio</h1>
+      <h1 className="title-hamburguer">&lt;Meu Portfólio /&gt;</h1>
 
       <ul className="menu-hamburguer">
-        <label htmlFor="hamburguerid">
-          <a href="#about">
-            <li className="list-hamburguer">ABOUT</li>
-          </a>
-        </label>
-        <a href="#hardskills">
-          <li className="list-hamburguer">HARD SKILLS</li>
-        </a>
-        <a href="#projects">
-          <li className="list-hamburguer">PROJECTS</li>
-        </a>
-        <a href="#contacts">
-          <li className="list-hamburguer">CONTACTS</li>
-        </a>
+        <Link href="/blog" passHref>
+          <li className="list-hamburguer">BLOG</li>
+        </Link>
+        <Link href="/" passHref>
+          <li className="list-hamburguer">PORTFÓLIO</li>
+        </Link>
+        <Link href="/github" passHref>
+          <li className="list-hamburguer">GITHUB</li>
+        </Link>
       </ul>
 
       <div className="menu">
         <ul>
-          <a href="#about">
-            <li className="menu-list">About</li>
-          </a>
-          <a href="#hardskills">
-            <li className="menu-list">Hard Skills</li>
-          </a>
-          <a href="#projects">
-            <li className="menu-list">Projects</li>
-          </a>
-          <a href="#contacts">
-            <li className="menu-list">Contacts</li>
-          </a>
+          <Link href="/blog" passHref>
+            <li className="menu-list">Blog</li>
+          </Link>
+          <Link href="/" passHref>
+            <li className="menu-list">Portfólio</li>
+          </Link>
+          <Link href="/github" passHref>
+            <li className="menu-list">Github</li>
+          </Link>
         </ul>
       </div>
     </div>

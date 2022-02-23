@@ -7,7 +7,7 @@ export default function Contacts() {
   return (
     <>
       <div id="contacts"></div>
-      <div className={style.contact} data-aos="fade-down">
+      <div className={style.contact} data-aos="fade-up">
         <h2 className="subTitle">Contacts</h2>
 
         <div className={style.contactContainer}>

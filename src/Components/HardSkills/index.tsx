@@ -9,7 +9,7 @@ export default function HardSkills() {
   return (
     <>
       <div id="hardskills"></div>
-      <div className={style.skills} data-aos="fade-down">
+      <div className={style.skills} data-aos="fade-up">
         <h2 className="subTitle">Hard Skills</h2>
         <div className={style.skillsContainer}>
           <div className={style.skillsBx} data-aos="fade-up">
