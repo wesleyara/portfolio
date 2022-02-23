@@ -1,6 +1,6 @@
 # Meu portfólio.
 
-![porfolio](https://user-images.githubusercontent.com/89321125/153666596-6c6e9f6f-a465-4338-925c-9f540a2281f3.PNG)
+![portfolio](https://user-images.githubusercontent.com/89321125/155370426-391d608d-9b31-46e0-b060-0b71561c2e7c.png)
 
 ### Contatos e redes sociais:
 
