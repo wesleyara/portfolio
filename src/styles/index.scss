@@ -19,13 +19,22 @@ body {
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
-  overflow: auto;
-  height: 70px;
+  overflow: hidden;
+  height: 80px;
   z-index: 2;
 }
 
 .home {
   margin-left: 5px;
+
+  h2 {
+    color: greenyellow;
+    float: left;
+    padding: 20px;
+    font-size: 20pt;
+    margin-left: 1px;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .menu {
@@ -91,7 +100,7 @@ body {
   top: 50%;
   left: 6%;
   transform: translate(-6%, -50%);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .list-hamburguer {
@@ -111,11 +120,11 @@ a {
   color: greenyellow;
 }
 
-
 @keyframes blinkCursor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
-  } to  {
+  }
+  to {
     border-right-color: transparent;
   }
 }
@@ -123,13 +132,15 @@ a {
 @keyframes typing {
   from {
     width: 0;
-  } to {
+  }
+  to {
     width: 586px;
   }
 }
 
 .typing-animation {
-  animation: blinkCursor 500ms steps(60) infinite normal, typing 5s steps(60) 1s normal;
+  animation: blinkCursor 500ms steps(60) infinite normal,
+    typing 5s steps(60) 1s normal;
 }
 
 .title {
@@ -141,8 +152,20 @@ a {
   overflow: hidden;
 }
 
-@media screen and (max-width: 500px) {
+.containerError {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 20px;
 
+  a {
+    color: #DA0AFD;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .header {
     justify-content: flex-end;
   }
@@ -160,15 +183,15 @@ a {
   }
 
   .container-hamburguer {
-      display: block;
+    display: block;
   }
 
   #hamburguerid:checked ~ .title-hamburguer {
-      display: inline;
+    display: inline;
   }
 
   #hamburguerid:checked ~ .menu-hamburguer {
-      display: block;
+    display: block;
   }
 }
 
