@@ -1,6 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "./index.module.scss";
+
+import countries from "../../Assets/Images/countries.png";
+import letmeask from "../../Assets/Images/letmeask.png";
 import portfolio from "../../Assets/Images/portfolio.png";
 import reactCRUD from "../../Assets/Images/reactCRUD.png";
 import cpf from "../../Assets/Images/cpf.png";
@@ -19,6 +22,62 @@ export default function Projects() {
       <div className={style.projects} data-aos="fade-up">
         <h2 className="subTitle">Projects</h2>
         <div className={style.projectsContainer}>
+          <a
+            target="_blank"
+            href="https://github.com/wesleyara/rest-countries-api"
+            rel="noreferrer"
+          >
+            {" "}
+            <div className={style.projectsBx} data-aos="fade-up">
+              <Image
+                layout="responsive"
+                className={style.img}
+                src={countries}
+                alt=""
+              />
+              <h2>Rest Contries API</h2>
+              <div>
+                {" "}
+                <img
+                  alt="Wesley-TS"
+                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+                />
+                <img
+                  alt="Wesley-REACT"
+                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                />{" "}
+              </div>
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://github.com/wesleyara/letmeask-nlw-together"
+            rel="noreferrer"
+          >
+            {" "}
+            <div className={style.projectsBx} data-aos="fade-up">
+              <Image
+                layout="responsive"
+                className={style.img}
+                src={letmeask}
+                alt=""
+              />
+              <h2>Letmeask</h2>
+              <div>
+                {" "}
+                <img
+                  alt="Wesley-TS"
+                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+                />
+                <img
+                  alt="Wesley-REACT"
+                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                />{" "}
+              </div>
+            </div>
+          </a>
+
           <a
             target="_blank"
             href="https://github.com/wesleyara/portfolio-v2"
