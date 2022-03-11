@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./index.module.scss";
 import perfilImg from "../../Assets/Images/app_development_SVG.svg";
 

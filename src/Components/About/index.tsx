@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import matematicaImg from "../../Assets/Images/image-matematica.jpg";
 import style from "./index.module.scss";
 

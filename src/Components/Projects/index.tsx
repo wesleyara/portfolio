@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
 import style from "./index.module.scss";
 
 import countries from "../../Assets/Images/countries.png";

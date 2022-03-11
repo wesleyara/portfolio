@@ -1,4 +1,3 @@
-import React from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { DiCss3, DiJavascript1 } from "react-icons/di";

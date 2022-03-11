@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./index.module.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
