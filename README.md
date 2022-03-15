@@ -23,7 +23,7 @@
 
 Olá, me chamo Wesley Gomes de Araújo e esse repositório é dedicado a criação do meu primeiro portfólio profissional.
 O portfólio v2 nada mais é do que uma versão melhorada do meu primeiro portfólio, implementando a utilização de React.js e futuramente Next.js na estrutura do site.
-Link para acessar o site: <a href="https://portfolio-wesleyara.vercel.app/">Wesley Araújo | Portfólio</a>.
+Link para acessar o site: <a href="https://wesleyaraujo.dev/">Wesley Araújo | Portfólio</a>.
 
 
 Com intuito de mostrar mais sobre o meu trabalho como Desenvolvedor Web, criei esse portfólio para que as pessoas consigam ver o que já fiz nesses meses desde que iniciei meus estudos em programação.
