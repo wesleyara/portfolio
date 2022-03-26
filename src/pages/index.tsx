@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 
 import Header from "../layout/Header";
-import About from "../Components/About";
-import HomePage from "../Components/HomePage";
-import HardSkills from "../Components/HardSkills";
-import Projects from "../Components/Projects";
-import Contacts from "../Components/Contacts";
+import About from "../components/About";
+import HomePage from "../components/HomePage";
+import HardSkills from "../components/HardSkills";
+import Projects from "../components/Projects";
+import Contacts from "../components/Contacts";
 import Footer from "../layout/Footer";
 
 const Home: NextPage = () => {
