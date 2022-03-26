@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import style from "./index.module.scss";
 
-import countries from "../../Assets/Images/countries.png";
-import letmeask from "../../Assets/Images/letmeask.png";
-import portfolio from "../../Assets/Images/portfolio.png";
-import reactCRUD from "../../Assets/Images/reactCRUD.png";
-import cpf from "../../Assets/Images/cpf.png";
-import calculadora from "../../Assets/Images/calculadora.png";
-import paginaCaptura from "../../Assets/Images/paginaCaptura.png";
-import chilipeppers from "../../Assets/Images/chilipeppers.png";
-import matpackage from "../../Assets/Images/matpackage.png";
-import erem from "../../Assets/Images/erem.png";
-import churras from "../../Assets/Images/churras.png";
+import countries from "../../assets/images/countries.png";
+import letmeask from "../../assets/images/letmeask.png";
+import portfolio from "../../assets/images/portfolio.png";
+import reactCRUD from "../../assets/images/reactCRUD.png";
+import cpf from "../../assets/images/cpf.png";
+import calculadora from "../../assets/images/calculadora.png";
+import paginaCaptura from "../../assets/images/paginaCaptura.png";
+import chilipeppers from "../../assets/images/chilipeppers.png";
+import matpackage from "../../assets/images/matpackage.png";
+import erem from "../../assets/images/erem.png";
+import churras from "../../assets/images/churras.png";
 import Image from "next/image";
 
 export default function Projects() {

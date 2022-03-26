@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import err from "../Assets/Images/Error_404_SVG.svg";
+import err from "../assets/images/Error_404_SVG.svg";
 
 export default function NotFound() {
   return (

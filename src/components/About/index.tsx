@@ -1,5 +1,5 @@
 import Image from "next/image";
-import matematicaImg from "../../Assets/Images/image-matematica.jpg";
+import matematicaImg from "../../assets/images/image-matematica.jpg";
 import style from "./index.module.scss";
 
 export default function About() {
