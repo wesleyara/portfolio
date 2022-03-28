@@ -1,27 +1,28 @@
 .about {
   width: 95%;
-  margin: auto;
-  margin-top: 50px;
+  max-width: 1100px;
+  margin: 50px auto;
 
   .aboutContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 
     .descriptionAbout {
       margin-top: 20px;
+      flex: 1.5;
       width: 60%;
     }
 
     .descriptionImage {
       margin-top: 20px;
-      border: 2px solid greenyellow;
+      flex: 1;
       border-radius: 5px;
     }
 
     .imgAbout {
       border-radius: 5px;
-      border: 2px solid greenyellow;
     }
   }
 }

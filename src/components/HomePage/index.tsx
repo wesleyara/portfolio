@@ -6,7 +6,23 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsMouse } from "react-icons/bs";
 import Image from "next/image";
 
+import Typed from "typed.js";
+import { useEffect } from "react";
+
 export default function HomePage() {
+  useEffect(() => {
+    const options = {
+      strings: [
+        "&lt;Olá! me chamo Wesley Araújo /&gt;",
+        "Sou desenvolvedor Front-End",
+        "Seja bem vindo ao meu portfólio!",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+    };
+
+    new Typed("#title", options);
+  }, []);
   return (
     <div className={style.profile} data-aos="fade-down">
       <span className={style.profileImage}>
@@ -18,9 +34,7 @@ export default function HomePage() {
         />
       </span>
       <div className={style.who} data-aos="fade-up">
-        <h1 className="title typing-animation">
-          &lt;Olá! me chamo Wesley Araújo /&gt;
-        </h1>
+        <h1 id="title"></h1>
         <br />
         <p className="paragraph">Desenvolvedor Web</p>
         <br />
@@ -28,10 +42,7 @@ export default function HomePage() {
           Bem-vindo ao meu portfólio, estou sempre em busca de conhecimento e
           novas experiências. Role para baixo e descubra mais sobre mim!
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
+
         <div className={style.networksBx}>
           <a
             href="https://github.com/wesleyara"
@@ -55,15 +66,11 @@ export default function HomePage() {
             <AiOutlineMail className={style.networks} />
           </a>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
         <div className={style.scrollContainer}>
           <a href="#about" rel="noreferrer">
             <BsMouse />
-            <span className={style.spanHome}>Role para baixo</span>
+            <span>Role para baixo</span>
           </a>
         </div>
         <div className={style.bxAnimation}></div>
