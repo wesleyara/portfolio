@@ -1,7 +1,8 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { DiCss3, DiJavascript1 } from "react-icons/di";
-import { SiPuppeteer, SiTypescript } from "react-icons/si";
+import { SiPuppeteer, SiTypescript, SiJest } from "react-icons/si";
+import { GrDocker } from "react-icons/gr";
 import style from "./index.module.scss";
 
 export default function HardSkills() {
@@ -28,6 +29,12 @@ export default function HardSkills() {
           </div>
           <div className={style.skillsBx} data-aos="fade-up">
             <FaNodeJs />
+          </div>
+          <div className={style.skillsBx} data-aos="fade-up">
+            <GrDocker />
+          </div>
+          <div className={style.skillsBx} data-aos="fade-up">
+            <SiJest />
           </div>
           <div className={style.skillsBx} data-aos="fade-up">
             <SiPuppeteer />

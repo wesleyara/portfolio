@@ -7,18 +7,16 @@
 }
 
 .skills {
-  margin: auto;
-  margin-top: 20px;
   width: 95%;
   overflow: hidden;
+  max-width: 1100px;
+  margin: 50px auto;
 
   .skillsContainer {
-    width: 70%;
-    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    gap: 10px;
 
     .skillsBx {
       width: 200px;
@@ -31,6 +29,7 @@
       border-radius: 5px;
       border-bottom: 10px solid greenyellow;
       transition: 0.3s ease-in-out;
+      cursor: pointer;
 
       svg {
         font-size: 80px;
