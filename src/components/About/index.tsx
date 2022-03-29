@@ -1,6 +1,6 @@
 import Image from "next/image";
 import matematicaImg from "../../assets/images/image-matematica.jpg";
-import style from "./index.module.scss";
+import style from "./styles.module.scss";
 
 export default function About() {
   return (
@@ -42,13 +42,7 @@ export default function About() {
           </div>
 
           <div className={style.descriptionImage}>
-            <Image
-              className={style.imgAbout}
-              width="500px"
-              height={320}
-              src={matematicaImg}
-              alt=""
-            />
+            <Image className={style.imgAbout} src={matematicaImg} alt="" />
           </div>
         </div>
       </div>

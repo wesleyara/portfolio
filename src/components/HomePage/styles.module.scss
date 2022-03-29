@@ -18,11 +18,12 @@
   justify-content: center;
   gap: 10px;
   color: greenyellow;
+  padding: 0 2rem;
 
   .profileImage {
-    width: 29.28vw;
     flex: 1;
     min-width: 300px;
+    max-width: 400px;
   }
 
   .who {
@@ -96,28 +97,10 @@
     top: 75%;
     left: 85%;
     transform: translate(-85%, -75%);
-    width: 75px;
-    height: 75px;
+    width: calc(max(5.49vw, 50px));
+    height: calc(max(5.49vw, 50px));
     margin-top: 15px;
     background-color: greenyellow;
     animation: rot 3s ease-in-out infinite;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .profile {
-    .bxAnimation {
-      width: 50px;
-      height: 50px;
-      top: 75%;
-      left: 80%;
-      transform: translate(-80%, -75%);
-    }
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .profile {
-    margin-top: 20px;
   }
 }

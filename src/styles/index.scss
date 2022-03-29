@@ -15,101 +15,14 @@ body {
   color: greenyellow;
 }
 
-.header {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 80px;
-  z-index: 2;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.home {
-  margin-left: 5px;
-
-  h2 {
-    color: greenyellow;
-    padding: 20px;
-    font-size: 20pt;
-    margin-left: 1px;
-    transition: 0.3s ease-in-out;
-  }
-}
-
-.menu {
-  margin-right: 5px;
-}
-
-.menu-list {
-  color: greenyellow;
-  float: left;
-  padding: 20px;
-  font-size: 15pt;
-  margin-left: 1px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.menu-list:hover {
-  background-color: greenyellow;
-  color: black;
-  transform: scale(1.1);
-}
-
-.inputCheck {
-  display: none;
-}
-
-.container-hamburguer {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburguer {
-  content: url(/menu-regular-60.png);
-}
-
-#hamburguerid:checked ~ label .hamburguer {
-  position: absolute;
-  background-color: black;
-  content: url(/x-regular-60.png);
-  box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
-  z-index: 5;
-}
-
-.title-hamburguer {
-  display: none;
-  color: greenyellow;
-  position: absolute;
-  z-index: 6;
-  top: 5%;
-  left: 6%;
-}
-
-.menu-hamburguer {
-  display: none;
-  list-style-type: none;
-  color: greenyellow;
-  font-size: 25px;
-  position: absolute;
-  z-index: 6;
-  top: 50%;
-  left: 6%;
-  transform: translate(-6%, -50%);
-  font-family: "Roboto", sans-serif;
-}
-
-.list-hamburguer {
-  padding: 10px;
-}
-
 .paragraph {
-  font-size: 14pt;
+  font-size: calc(max(16px, 1.31vw));
+}
+
+nav.active ul {
+  height: calc(100vh - 80px);
+  visibility: visible;
+  overflow: auto;
 }
 
 .subTitle {
@@ -121,8 +34,10 @@ a {
   color: greenyellow;
 }
 
-@keyframes typedjsBlink{
-  50% { opacity: 0.0; }
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .typed-cursor {
@@ -139,33 +54,8 @@ a {
   font-size: 20px;
 
   a {
-    color: #DA0AFD;
+    color: #da0afd;
     text-decoration: underline;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .header {
-    justify-content: flex-end;
-  }
-
-  .home {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .container-hamburguer {
-    display: block;
-  }
-
-  #hamburguerid:checked ~ .title-hamburguer {
-    display: inline;
-  }
-
-  #hamburguerid:checked ~ .menu-hamburguer {
-    display: block;
-  }
-}

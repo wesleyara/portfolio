@@ -1,7 +1,9 @@
 .about {
   width: 95%;
+  text-align: justify;
   max-width: 1100px;
   margin: 50px auto;
+  padding: 0 2rem;
 
   .aboutContainer {
     display: flex;
@@ -12,37 +14,18 @@
     .descriptionAbout {
       margin-top: 20px;
       flex: 1.5;
-      width: 60%;
+      min-width: 300px;
     }
 
     .descriptionImage {
       margin-top: 20px;
       flex: 1;
       border-radius: 5px;
-    }
-
-    .imgAbout {
-      border-radius: 5px;
-    }
-  }
-}
-
-
-@media screen and (max-width: 500px) {
-  .about {
-
-    .aboutContainer {
-
-      .descriptionAbout {
-        width: 100%;
-      }
-
-      .descriptionImage {
-        text-align: center;
-      }
+      min-width: 300px;
 
       .imgAbout {
-        width: 90%;
+        border-radius: 5px;
+        width: 100%;
       }
     }
   }

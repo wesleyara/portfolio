@@ -26,12 +26,7 @@ export default function HomePage() {
   return (
     <div className={style.profile} data-aos="fade-down">
       <span className={style.profileImage}>
-        <Image
-          layout="responsive"
-          className={style.profileImage}
-          src={perfilImg}
-          alt="foto"
-        />
+        <Image layout="responsive" src={perfilImg} alt="foto" />
       </span>
       <div className={style.who} data-aos="fade-up">
         <h1 id="title"></h1>
