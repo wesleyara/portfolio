@@ -8,7 +8,6 @@ interface ProjectsBoxProps {
   title: string;
   img1: string;
   img2: string;
-  img3?: string;
 }
 
 export default function ProjectsBox({
@@ -17,7 +16,6 @@ export default function ProjectsBox({
   title,
   img1,
   img2,
-  img3,
 }: ProjectsBoxProps) {
   return (
     <a target="_blank" href={link} rel="noreferrer">
@@ -34,7 +32,6 @@ export default function ProjectsBox({
           {" "}
           <img src={img1} alt="image" />
           <img src={img2} alt="image" />
-          <img src={img3} alt="image" />{" "}
         </div>
       </div>
     </a>

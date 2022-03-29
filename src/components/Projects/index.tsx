@@ -1,6 +1,7 @@
 import style from "./styles.module.scss";
 
 import countries from "../../assets/images/countries.png";
+import expense from "../../assets/images/expense.png";
 import letmeask from "../../assets/images/letmeask.png";
 import portfolio from "../../assets/images/portfolio.png";
 import reactCRUD from "../../assets/images/reactCRUD.png";
@@ -23,7 +24,7 @@ export default function Projects() {
           <ProjectsBox
             title="Expense"
             link="https://github.com/expense"
-            src={chilipeppers}
+            src={expense}
             img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
             img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
           />
@@ -104,18 +105,16 @@ export default function Projects() {
             title="Churrascômetro"
             link="https://github.com/wesleyara/churrascometro"
             src={churras}
-            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
             img2="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-            img3="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+            img1="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
           />
 
           <ProjectsBox
             title="CPF generator"
             link="https://github.com/wesleyara/CPF-generator"
             src={cpf}
-            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
             img2="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-            img3="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+            img1="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
           />
         </div>
       </div>
