@@ -1,12 +1,13 @@
-.header {
-  background-color: rgb(0, 0, 0);
+import styled from "styled-components";
+
+export const Container = styled.header`
+  background-color: black;
   display: flex;
   justify-content: space-between;
-  z-index: 2;
   max-width: 1100px;
   margin: auto;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
 
   .btnMenu {
     display: none;
@@ -35,7 +36,7 @@
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media (max-width: 550px) {
     padding: 15px 2rem;
 
     h2 {
@@ -59,11 +60,10 @@
       display: block;
       position: absolute;
       width: 100%;
-      top: 70px;
+      top: 80px;
       right: 0px;
-      background-color: black;
       height: 0px;
-      z-index: 1000;
+      z-index: 999;
       transition: 1s;
       visibility: hidden;
       overflow: hidden;
@@ -72,5 +72,12 @@
         padding: 15px 2rem;
       }
     }
+
+    nav.active ul {
+      height: calc(100vh - 80px);
+      background: black;
+      visibility: visible;
+      overflow: auto;
+    }
   }
-}
+`;

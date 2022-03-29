@@ -1,4 +1,6 @@
-.projectsBx {
+import styled from "styled-components";
+
+export const Container = styled.div`
   margin-top: 20px;
   text-align: center;
   background-color: gray;
@@ -6,10 +8,6 @@
   border-radius: 5px;
   border-bottom: 10px solid greenyellow;
   cursor: pointer;
-
-  .img {
-    width: 350px;
-  }
 
   h2 {
     margin-top: 5px;
@@ -27,12 +25,8 @@
 
     animation: neon 2s alternate infinite;
   }
-}
 
-@media screen and (max-width: 350px) {
-  .projectsBx {
-    .img {
-      width: 300px;
-    }
+  @media (max-width: 350px) {
+    width: 300px;
   }
-}
+`;

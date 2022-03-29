@@ -1,5 +1,3 @@
-import style from "./styles.module.scss";
-
 import countries from "../../assets/images/countries.png";
 import expense from "../../assets/images/expense.png";
 import letmeask from "../../assets/images/letmeask.png";
@@ -13,14 +11,15 @@ import matpackage from "../../assets/images/matpackage.png";
 import erem from "../../assets/images/erem.png";
 import churras from "../../assets/images/churras.png";
 import ProjectsBox from "../ProjectsBox";
+import { ProjectsStyle } from "./style";
 
 export default function Projects() {
   return (
     <>
       <div id="projects"></div>
-      <div className={style.projects} data-aos="fade-up">
+      <ProjectsStyle data-aos="fade-up">
         <h2 className="subTitle">Projects</h2>
-        <div className={style.projectsContainer}>
+        <div className="projectsContainer">
           <ProjectsBox
             title="Expense"
             link="https://github.com/expense"
@@ -117,7 +116,7 @@ export default function Projects() {
             img1="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
           />
         </div>
-      </div>
+      </ProjectsStyle>
     </>
   );
 }

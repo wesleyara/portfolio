@@ -1,17 +1,19 @@
-@keyframes neon {
-  from {
-    filter: drop-shadow(0 0 0 greenyellow);
-  }
-  to {
-    filter: drop-shadow(0 0 10px greenyellow);
-  }
-}
+import styled from "styled-components";
 
-.contact {
+export const Container = styled.section`
   width: 95%;
   max-width: 1100px;
   margin: 50px auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+
+  @keyframes neon {
+    from {
+      filter: drop-shadow(0 0 0 greenyellow);
+    }
+    to {
+      filter: drop-shadow(0 0 10px greenyellow);
+    }
+  }
 
   .contactContainer {
     margin: auto;
@@ -34,14 +36,10 @@
       animation: neon 1s alternate infinite ease-in-out;
     }
   }
-}
 
-
-@media screen and (max-width: 500px) {
-  .contact {
-
+  @media (max-width: 500px) {
     .contactContainer {
       justify-content: flex-start;
     }
   }
-}
+`;

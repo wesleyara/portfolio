@@ -1,13 +1,6 @@
-@keyframes neon {
-  from {
-    filter: drop-shadow(0 0 0 greenyellow);
-  }
-  to {
-    filter: drop-shadow(0 0 10px greenyellow);
-  }
-}
+import styled from "styled-components";
 
-.profile {
+export const Container = styled.main`
   max-width: 1100px;
   margin: 70px auto;
   width: 95%;
@@ -18,7 +11,16 @@
   justify-content: center;
   gap: 10px;
   color: greenyellow;
-  padding: 0 2rem;
+  padding: 0 1rem;
+
+  @keyframes neon {
+    from {
+      filter: drop-shadow(0 0 0 greenyellow);
+    }
+    to {
+      filter: drop-shadow(0 0 10px greenyellow);
+    }
+  }
 
   .profileImage {
     flex: 1;
@@ -38,14 +40,26 @@
     }
   }
 
-  .networks {
+  @keyframes typedjsBlink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .typed-cursor {
+    font-size: calc(max(30px, 4vw));
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+  }
+
+  svg {
     margin-left: 10px;
     font-size: 40px;
     padding: 2px;
     color: greenyellow;
   }
 
-  .networks:hover {
+  svg:hover {
     animation: neon 2s alternate infinite ease-in-out;
   }
 
@@ -103,4 +117,4 @@
     background-color: greenyellow;
     animation: rot 3s ease-in-out infinite;
   }
-}
+`;

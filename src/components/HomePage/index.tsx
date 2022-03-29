@@ -1,4 +1,3 @@
-import style from "./styles.module.scss";
 import perfilImg from "../../assets/images/app_development_SVG.svg";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -8,6 +7,7 @@ import Image from "next/image";
 
 import Typed from "typed.js";
 import { useEffect } from "react";
+import { Container } from "./style";
 
 export default function HomePage() {
   useEffect(() => {
@@ -24,11 +24,11 @@ export default function HomePage() {
     new Typed("#title", options);
   }, []);
   return (
-    <div className={style.profile} data-aos="fade-down">
-      <span className={style.profileImage}>
+    <Container data-aos="fade-down">
+      <span className="profileImage">
         <Image layout="responsive" src={perfilImg} alt="foto" />
       </span>
-      <div className={style.who} data-aos="fade-up">
+      <div className="who" data-aos="fade-up">
         <h1 id="title"></h1>
         <br />
         <p className="paragraph">Desenvolvedor Web</p>
@@ -38,38 +38,38 @@ export default function HomePage() {
           novas experiências. Role para baixo e descubra mais sobre mim!
         </p>
 
-        <div className={style.networksBx}>
+        <div className="networksBx">
           <a
             href="https://github.com/wesleyara"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub className={style.networks} />
+            <FaGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/wesley-gomes-de-ara%C3%BAjo-534a66221/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin className={style.networks} />
+            <FaLinkedin />
           </a>
           <a
             href="mailto:wesleyara.contato@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineMail className={style.networks} />
+            <AiOutlineMail />
           </a>
         </div>
 
-        <div className={style.scrollContainer}>
+        <div className="scrollContainer">
           <a href="#about" rel="noreferrer">
             <BsMouse />
             <span>Role para baixo</span>
           </a>
         </div>
-        <div className={style.bxAnimation}></div>
+        <div className="bxAnimation"></div>
       </div>
-    </div>
+    </Container>
   );
 }

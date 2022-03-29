@@ -1,9 +1,11 @@
-.about {
+import styled from "styled-components";
+
+export const Container = styled.section`
   width: 95%;
   text-align: justify;
   max-width: 1100px;
   margin: 50px auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 
   .aboutContainer {
     display: flex;
@@ -23,10 +25,9 @@
       border-radius: 5px;
       min-width: 300px;
 
-      .imgAbout {
+      img {
         border-radius: 5px;
-        width: 100%;
       }
     }
   }
-}
+`;

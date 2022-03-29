@@ -1,17 +1,20 @@
-@keyframes neon {
-  from {
-    filter: drop-shadow(0 0 0 greenyellow);
-  } to {
-    filter: drop-shadow(0 0 10px greenyellow);
-  }
-}
+import styled from "styled-components";
 
-.skills {
+export const Container = styled.section`
   width: 95%;
   overflow: hidden;
   max-width: 1100px;
   margin: 50px auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+
+  @keyframes neon {
+    from {
+      filter: drop-shadow(0 0 0 greenyellow);
+    }
+    to {
+      filter: drop-shadow(0 0 10px greenyellow);
+    }
+  }
 
   .skillsContainer {
     display: flex;
@@ -19,7 +22,7 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    .skillsBx {
+    div {
       width: 200px;
       height: 150px;
       margin-top: 20px;
@@ -37,7 +40,7 @@
       }
     }
 
-    .skillsBx:hover {
+    div:hover {
       border-color: gray;
       background-color: greenyellow;
       transform: scale(1.1);
@@ -48,4 +51,4 @@
       }
     }
   }
-}
+`;

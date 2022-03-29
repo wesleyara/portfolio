@@ -1,15 +1,13 @@
-import style from "./styles.module.scss";
+import { Container } from "./style";
 
-export default function Footer() {
+export function Footer() {
   return (
-    <div className={style.footer} data-aos="fade-up">
-      <a className={style.copyright} href="mailto:wesleyara.contato@gmail.com">
+    <Container>
+      <a className="copyright" href="mailto:wesleyara.contato@gmail.com">
         <p>Desenvolvido por Wesley Araújo</p>
       </a>
       <br />
-      <p className={style.reserv}>
-        Todos os direitos reservados - Wesley Araújo
-      </p>
-    </div>
+      <p className="reserv">Todos os direitos reservados - Wesley Araújo</p>
+    </Container>
   );
 }

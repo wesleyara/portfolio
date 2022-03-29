@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import style from "./styles.module.scss";
+import { Container } from "./style";
 
 interface ProjectsBoxProps {
   link: string;
@@ -20,20 +19,15 @@ export default function ProjectsBox({
   return (
     <a target="_blank" href={link} rel="noreferrer">
       {" "}
-      <div className={style.projectsBx} data-aos="fade-up">
-        <Image
-          layout="responsive"
-          className={style.img}
-          src={src}
-          alt="image"
-        />
+      <Container data-aos="fade-up">
+        <Image layout="responsive" className="img" src={src} alt="image" />
         <h2>{title}</h2>
         <div>
           {" "}
           <img src={img1} alt="image" />
           <img src={img2} alt="image" />
         </div>
-      </div>
+      </Container>
     </a>
   );
 }

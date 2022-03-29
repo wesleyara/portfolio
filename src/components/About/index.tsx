@@ -1,15 +1,14 @@
 import Image from "next/image";
 import matematicaImg from "../../assets/images/image-matematica.jpg";
-import style from "./styles.module.scss";
+import { Container } from "./style";
 
 export default function About() {
   return (
     <>
-      <div id="about"></div>
-      <div className={style.about} data-aos="fade-up">
+      <Container data-aos="fade-up">
         <h2 className="subTitle">About</h2>
-        <div className={style.aboutContainer}>
-          <div className={style.descriptionAbout}>
+        <div className="aboutContainer">
+          <div className="descriptionAbout">
             <p className="paragraph">
               Meu nome é Wesley Gomes de Araújo, sou graduado em Licenciatura em
               Matemática pela Universidade de Pernambuco. Atraído pela
@@ -41,11 +40,11 @@ export default function About() {
             </p>
           </div>
 
-          <div className={style.descriptionImage}>
-            <Image className={style.imgAbout} src={matematicaImg} alt="" />
+          <div className="descriptionImage">
+            <Image layout="responsive" src={matematicaImg} alt="" />
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

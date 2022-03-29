@@ -1,15 +1,15 @@
-import style from "./styles.module.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+
+import { Container } from "./style";
 
 export default function Contacts() {
   return (
     <>
-      <div id="contacts"></div>
-      <div className={style.contact} data-aos="fade-up">
+      <Container data-aos="fade-up">
         <h2 className="subTitle">Contacts</h2>
 
-        <div className={style.contactContainer}>
+        <div className="contactContainer">
           <div>
             <AiOutlineMail />
             <strong>
@@ -64,7 +64,7 @@ export default function Contacts() {
             </strong>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

@@ -4,9 +4,9 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgMenuMotion } from "react-icons/cg";
 
-import style from "./styles.module.scss";
+import { Container } from "./style";
 
-export default function Header() {
+export function Header() {
   const [active, setActive] = useState(false);
 
   function handleActive() {
@@ -14,13 +14,13 @@ export default function Header() {
   }
 
   return (
-    <header className={style.header} data-aos="fade-down">
-      <div className={style.home}>
+    <Container data-aos="fade-down">
+      <div>
         <h2>&lt;Portfólio /&gt;</h2>
       </div>
 
       <nav className={active ? "active" : ""}>
-        <button className={style.btnMenu} onClick={handleActive}>
+        <button className="btnMenu" onClick={handleActive}>
           {!active ? <GiHamburgerMenu /> : <CgMenuMotion />}
         </button>
 
@@ -36,6 +36,6 @@ export default function Header() {
           </Link>
         </ul>
       </nav>
-    </header>
+    </Container>
   );
 }
