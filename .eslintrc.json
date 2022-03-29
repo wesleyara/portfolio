@@ -10,8 +10,7 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "next/core-web-vitals"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -22,10 +21,15 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers",
+    "prettier"
   ],
   "rules": {
+    "react/prop-types": "off",
+    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
     "no-unused-vars": [
       "error",
       {
