@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-import style from "./index.module.scss";
+import style from "./styles.module.scss";
 
 import countries from "../../assets/images/countries.png";
 import letmeask from "../../assets/images/letmeask.png";
@@ -12,7 +11,7 @@ import chilipeppers from "../../assets/images/chilipeppers.png";
 import matpackage from "../../assets/images/matpackage.png";
 import erem from "../../assets/images/erem.png";
 import churras from "../../assets/images/churras.png";
-import Image from "next/image";
+import ProjectsBox from "../ProjectsBox";
 
 export default function Projects() {
   return (
@@ -21,295 +20,103 @@ export default function Projects() {
       <div className={style.projects} data-aos="fade-up">
         <h2 className="subTitle">Projects</h2>
         <div className={style.projectsContainer}>
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/rest-countries-api"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image
-                layout="responsive"
-                className={style.img}
-                src={countries}
-                alt=""
-              />
-              <h2>Rest Contries API</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Expense"
+            link="https://github.com/expense"
+            src={chilipeppers}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/letmeask-nlw-together"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image
-                layout="responsive"
-                className={style.img}
-                src={letmeask}
-                alt=""
-              />
-              <h2>Letmeask</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Rest Countries API"
+            link="https://github.com/wesleyara/rest-countries-api"
+            src={countries}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/portfolio-v2"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image
-                layout="responsive"
-                className={style.img}
-                src={portfolio}
-                alt=""
-              />
-              <h2>Portfólio</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Letmeask"
+            link="https://github.com/wesleyara/letmeask-nlw-together"
+            src={letmeask}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/react-CRUD"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={reactCRUD} alt="" />
-              <h2>React CRUD</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Portfólio"
+            link="https://github.com/wesleyara/portfolio-v2"
+            src={portfolio}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/calculadora-de-pm-alvo-para-acoes"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={calculadora} alt="" />
-              <h2>Calculadora de Preço Médio Alvo</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="React CRUD"
+            link="https://github.com/wesleyara/react-CRUD"
+            src={reactCRUD}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/pagina-de-captura-para-curso"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={paginaCaptura} alt="" />
-              <h2>Página de captura</h2>
-              <div>
-                <img
-                  alt="Wesley-HTML"
-                  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Calculadora de Preço Médio Alvo"
+            link="https://github.com/wesleyara/rest-countries-api"
+            src={calculadora}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/chili-peppers-pizzaria"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={chilipeppers} alt="" />
-              <h2>Chili Peppers Pizzaria</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Página de Captura"
+            link="https://github.com/wesleyara/rest-countries-api"
+            src={paginaCaptura}
+            img1="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+            img2="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/mat-package"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={matpackage} alt="" />
-              <h2>Mat Package</h2>
-              <div>
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-NODE"
-                  src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-                />
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Chili Peppers Pizzaria"
+            link="https://github.com/wesleyara/chili-peppers-pizzaria"
+            src={chilipeppers}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a target="_blank" href="https://eremcjf.com.br/" rel="noreferrer">
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={erem} alt="" />
-              <h2>EREM Site</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Mat Package"
+            link="https://github.com/wesleyara/mat-package"
+            src={matpackage}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/churrascometro"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={churras} alt="" />
-              <h2>Churrascômetro</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-HTML"
-                  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                />
-                <img
-                  alt="Wesley-CSS"
-                  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-                />
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="EREM"
+            link="https://eremcjf.com.br/"
+            src={erem}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+          />
 
-          <a
-            target="_blank"
-            href="https://github.com/wesleyara/CPF-generator"
-            rel="noreferrer"
-          >
-            {" "}
-            <div className={style.projectsBx} data-aos="fade-up">
-              <Image className={style.img} src={cpf} alt="" />
-              <h2>CPF generator</h2>
-              <div>
-                {" "}
-                <img
-                  alt="Wesley-TS"
-                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  alt="Wesley-REACT"
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                />
-                <img
-                  alt="Wesley-SASS"
-                  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-                />{" "}
-              </div>
-            </div>
-          </a>
+          <ProjectsBox
+            title="Churrascômetro"
+            link="https://github.com/wesleyara/churrascometro"
+            src={churras}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+            img3="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+          />
+
+          <ProjectsBox
+            title="CPF generator"
+            link="https://github.com/wesleyara/CPF-generator"
+            src={cpf}
+            img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            img2="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+            img3="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+          />
         </div>
       </div>
     </>
