@@ -1,4 +1,4 @@
-import style from "./index.module.scss";
+import style from "./styles.module.scss";
 import perfilImg from "../../assets/images/app_development_SVG.svg";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";

@@ -3,7 +3,7 @@ import { FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 import { DiCss3, DiJavascript1 } from "react-icons/di";
 import { SiPuppeteer, SiTypescript, SiJest } from "react-icons/si";
 import { GrDocker } from "react-icons/gr";
-import style from "./index.module.scss";
+import style from "./styles.module.scss";
 
 export default function HardSkills() {
   return (
