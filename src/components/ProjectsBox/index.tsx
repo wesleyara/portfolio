@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Container } from "./style";
 
 interface ProjectsBoxProps {
