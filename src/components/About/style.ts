@@ -17,6 +17,11 @@ export const Container = styled.section`
       margin-top: 20px;
       flex: 1.5;
       min-width: 300px;
+
+      a {
+        text-decoration: underline;
+        color: ${(props) => props.theme.colors.text};
+      }
     }
 
     .descriptionImage {

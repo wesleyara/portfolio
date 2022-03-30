@@ -6,15 +6,6 @@ export const Container = styled.section`
   margin: 50px auto;
   padding: 0 1rem;
 
-  @keyframes neon {
-    from {
-      filter: drop-shadow(0 0 0 greenyellow);
-    }
-    to {
-      filter: drop-shadow(0 0 10px greenyellow);
-    }
-  }
-
   .contactContainer {
     margin: auto;
     width: 60%;
@@ -29,11 +20,11 @@ export const Container = styled.section`
     }
 
     a {
-      color: greenyellow;
+      color: ${(props) => props.theme.colors.text};
     }
 
     a:hover {
-      animation: neon 1s alternate infinite ease-in-out;
+      text-decoration: underline;
     }
   }
 

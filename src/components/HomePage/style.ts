@@ -10,18 +10,8 @@ export const Container = styled.main`
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  color: greenyellow;
   padding: 0 1rem;
-  z-index: -1;
-
-  @keyframes neon {
-    from {
-      filter: drop-shadow(0 0 0 greenyellow);
-    }
-    to {
-      filter: drop-shadow(0 0 10px greenyellow);
-    }
-  }
+  z-index: 0;
 
   .profileImage {
     flex: 1;
@@ -37,7 +27,6 @@ export const Container = styled.main`
     h1 {
       font-size: calc(max(25px, 3.29vw));
       display: inline;
-      filter: drop-shadow(0 0 10px greenyellow);
     }
   }
 
@@ -57,11 +46,12 @@ export const Container = styled.main`
     margin-left: 10px;
     font-size: 40px;
     padding: 2px;
-    color: greenyellow;
+    color: ${(props) => props.theme.colors.text};
+    cursor: pointer;
   }
 
   svg:hover {
-    animation: neon 2s alternate infinite ease-in-out;
+    color: red;
   }
 
   .networksBx {
@@ -80,15 +70,15 @@ export const Container = styled.main`
       display: flex;
       justify-content: center;
       align-items: center;
+      color: ${(props) => props.theme.colors.text};
 
       svg {
         font-size: 40px;
-        color: greenyellow;
+        color: ${(props) => props.theme.colors.text};
       }
 
       span {
         margin-top: 10px;
-        color: greenyellow;
       }
     }
   }
@@ -115,7 +105,7 @@ export const Container = styled.main`
     width: calc(max(5.49vw, 50px));
     height: calc(max(5.49vw, 50px));
     margin-top: 15px;
-    background-color: greenyellow;
+    background-color: ${(props) => props.theme.colors.text};
     animation: rot 3s ease-in-out infinite;
   }
 `;

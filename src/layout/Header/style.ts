@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  background-color: black;
+  background-color: ${(props) => props.theme.colors.background};
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
@@ -16,7 +16,6 @@ export const Container = styled.header`
   h2 {
     padding: 20px;
     font-size: 20pt;
-    transition: 0.3s ease-in-out;
   }
 
   ul {
@@ -26,12 +25,20 @@ export const Container = styled.header`
       padding: 20px;
       font-size: 15pt;
       cursor: pointer;
-      transition: 0.3s ease-in-out;
+      transition: 0.2s ease-in-out;
 
       &:hover {
-        background-color: greenyellow;
-        color: black;
-        transform: scale(1.1);
+        background-color: ${(props) => props.theme.colors.text};
+        color: ${(props) => props.theme.colors.background};
+      }
+    }
+
+    .theme {
+      transition: 0ms;
+
+      &:hover {
+        background-color: ${(props) => props.theme.colors.background};
+        color: ${(props) => props.theme.colors.text};
       }
     }
   }
@@ -47,8 +54,8 @@ export const Container = styled.header`
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: black;
-      color: greenyellow;
+      background-color: ${(props) => props.theme.colors.background};
+      color: ${(props) => props.theme.colors.text};
       border: none;
       cursor: pointer;
       padding: 5px;
@@ -64,18 +71,19 @@ export const Container = styled.header`
       right: 0px;
       height: 0px;
       z-index: 999;
-      transition: 1s;
       visibility: hidden;
       overflow: hidden;
+      background-color: ${(props) => props.theme.colors.background};
+      color: ${(props) => props.theme.colors.text};
 
       li {
         padding: 15px 2rem;
+        transition: 0ms;
       }
     }
 
     nav.active ul {
       height: calc(100vh - 80px);
-      background: black;
       visibility: visible;
       overflow: auto;
     }

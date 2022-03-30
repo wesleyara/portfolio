@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
   text-align: center;
   padding: 30px 1rem;
-  border-top: 1px solid greenyellow;
+  border-top: 1px solid ${(props) => props.theme.colors.text};
 
   .reserv {
     font-size: 20px;
@@ -11,10 +11,11 @@ export const Container = styled.footer`
 
   .copyright {
     font-size: 20px;
+    color: ${(props) => props.theme.colors.text};
   }
 
   .copyright:hover {
     text-decoration: underline;
-    color: white;
+    color: ${(props) => props.theme.colors.text};
   }
 `;

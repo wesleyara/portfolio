@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-top: 20px;
   text-align: center;
-  background-color: gray;
+  background-color: ${(props) => props.theme.colors.cardBack};
   width: 350px;
   border-radius: 5px;
-  border-bottom: 10px solid greenyellow;
+  border-bottom: 10px solid ${(props) => props.theme.colors.card};
   cursor: pointer;
+  color: ${(props) => props.theme.colors.text};
 
   h2 {
     margin-top: 5px;
@@ -19,11 +20,9 @@ export const Container = styled.div`
   }
 
   &:hover {
-    background-color: greenyellow;
-    color: black;
-    border-color: gray;
-
-    animation: neon 2s alternate infinite;
+    background-color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.card};
+    border-color: ${(props) => props.theme.colors.card};
   }
 
   @media (max-width: 350px) {
