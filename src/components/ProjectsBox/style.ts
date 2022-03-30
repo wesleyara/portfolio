@@ -20,9 +20,9 @@ export const Container = styled.div`
   }
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.text};
-    color: ${(props) => props.theme.colors.card};
-    border-color: ${(props) => props.theme.colors.card};
+    background-color: ${(props) => props.theme.colors.card};
+    color: ${(props) => props.theme.colors.cardBack};
+    border-color: ${(props) => props.theme.colors.cardBack};
   }
 
   @media (max-width: 350px) {

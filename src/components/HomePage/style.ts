@@ -48,43 +48,16 @@ export const Container = styled.main`
     padding: 2px;
     color: ${(props) => props.theme.colors.text};
     cursor: pointer;
+    border-bottom: 1px solid transparent;
   }
 
   svg:hover {
-    color: red;
+    border-bottom: 1px solid ${(props) => props.theme.colors.text};
   }
 
   .networksBx {
     text-align: center;
     margin-top: 60px;
-  }
-
-  .scroll {
-    color: white;
-  }
-
-  .scrollContainer {
-    margin: 50px auto;
-
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: ${(props) => props.theme.colors.text};
-
-      svg {
-        font-size: 40px;
-        color: ${(props) => props.theme.colors.text};
-      }
-
-      span {
-        margin-top: 10px;
-      }
-    }
-  }
-
-  .scrollContainer:hover {
-    animation: neon 2s alternate infinite ease-in-out;
   }
 
   @keyframes rot {

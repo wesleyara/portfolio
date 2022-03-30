@@ -2,7 +2,6 @@ import perfilImg from "../../assets/images/app_development_SVG.svg";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsMouse } from "react-icons/bs";
 import Image from "next/image";
 
 import Typed from "typed.js";
@@ -59,13 +58,6 @@ export default function HomePage() {
             rel="noreferrer"
           >
             <AiOutlineMail />
-          </a>
-        </div>
-
-        <div className="scrollContainer">
-          <a href="#about" rel="noreferrer">
-            <BsMouse />
-            <span>Role para baixo</span>
           </a>
         </div>
         <div className="bxAnimation"></div>
