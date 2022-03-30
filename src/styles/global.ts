@@ -15,8 +15,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: black;
-    color: greenyellow;
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
   }
 
   .paragraph {

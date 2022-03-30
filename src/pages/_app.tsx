@@ -1,26 +1,34 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { GlobalStyle } from "../styles/global";
-import theme from "../styles/theme";
+import { themeDark, themeLight } from "../styles/theme";
 import { ThemeProvider } from "styled-components";
+import { Header } from "../layout/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [theme, setTheme] = useState("light");
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  function toggleTheme() {
+    setTheme(theme === "light" ? "dark" : "light");
+  }
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme === "light" ? themeLight : themeDark}>
       <Head>
         <title>Wesley Araújo | Portfólio</title>
         <link rel="shortcut icon" href="./icon.png" />
       </Head>
       <GlobalStyle />
+      <Header eventFunction={toggleTheme} />
       <Component {...pageProps} />
     </ThemeProvider>
   );

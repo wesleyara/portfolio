@@ -1,12 +1,17 @@
 import Link from "next/link";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
+import { BiMoon } from "react-icons/bi";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgMenuMotion } from "react-icons/cg";
 
 import { Container } from "./style";
 
-export function Header() {
+interface HeaderProps {
+  eventFunction: MouseEventHandler;
+}
+
+export function Header({ eventFunction }: HeaderProps) {
   const [active, setActive] = useState(false);
 
   function handleActive() {
@@ -14,7 +19,7 @@ export function Header() {
   }
 
   return (
-    <Container data-aos="fade-down">
+    <Container>
       <div>
         <h2>&lt;Portfólio /&gt;</h2>
       </div>
@@ -34,6 +39,9 @@ export function Header() {
           <Link href="/github">
             <li>Github</li>
           </Link>
+          <li className="theme" onClick={eventFunction}>
+            <BiMoon />
+          </li>
         </ul>
       </nav>
     </Container>
