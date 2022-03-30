@@ -7,6 +7,7 @@ import HardSkills from "../components/HardSkills";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
 import { Footer } from "../layout/Footer";
+import { Form } from "../components/Form";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <HardSkills />
       <Projects />
       <Contacts />
+      <Form />
       <Footer />
     </>
   );
