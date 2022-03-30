@@ -16,9 +16,8 @@ import { ProjectsStyle } from "./style";
 export default function Projects() {
   return (
     <>
-      <div id="projects"></div>
       <ProjectsStyle data-aos="fade-up">
-        <h2 className="subTitle">Projects</h2>
+        <h2 className="subTitle">Projetos</h2>
         <div className="projectsContainer">
           <ProjectsBox
             title="Expense"

@@ -35,6 +35,8 @@ export const Container = styled.section`
       transition: 0.3s ease-in-out;
       cursor: pointer;
 
+      transition: 0.2s ease-in-out;
+
       svg {
         font-size: 80px;
       }

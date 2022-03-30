@@ -12,6 +12,7 @@ export const Container = styled.main`
   gap: 10px;
   color: greenyellow;
   padding: 0 1rem;
+  z-index: -1;
 
   @keyframes neon {
     from {

@@ -8,8 +8,8 @@ import { Container } from "./styles";
 export default function HardSkills() {
   return (
     <>
-      <Container data-aos="fade-up">
-        <h2 className="subTitle">Hard Skills</h2>
+      <Container data-aos="fade-right">
+        <h2 className="subTitle">Habilidades</h2>
         <div className="skillsContainer">
           <div data-aos="fade-up">
             <AiFillHtml5 />

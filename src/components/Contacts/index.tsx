@@ -6,8 +6,8 @@ import { Container } from "./style";
 export default function Contacts() {
   return (
     <>
-      <Container data-aos="fade-up">
-        <h2 className="subTitle">Contacts</h2>
+      <Container data-aos="fade-left">
+        <h2 className="subTitle">Contato</h2>
 
         <div className="contactContainer">
           <div>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
   text-align: center;
   padding: 30px 1rem;
-  background-color: rgb(85, 83, 83);
+  border-top: 1px solid greenyellow;
 
   .reserv {
     font-size: 20px;
@@ -15,6 +15,6 @@ export const Container = styled.footer`
 
   .copyright:hover {
     text-decoration: underline;
-    color: black;
+    color: white;
   }
 `;
