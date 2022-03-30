@@ -19,7 +19,7 @@ export default function ProjectsBox({
   return (
     <a target="_blank" href={link} rel="noreferrer">
       {" "}
-      <Container data-aos="fade-right">
+      <Container data-aos="fade-up">
         <Image layout="responsive" className="img" src={src} alt="image" />
         <h2>{title}</h2>
         <div>

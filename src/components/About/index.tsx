@@ -5,7 +5,7 @@ import { Container } from "./style";
 export default function About() {
   return (
     <>
-      <Container data-aos="fade-left">
+      <Container data-aos="fade-up">
         <h2 className="subTitle">Sobre</h2>
         <div className="aboutContainer">
           <div className="descriptionAbout">
@@ -21,8 +21,7 @@ export default function About() {
               aprofundando em front-end para futuramente avançar no back-end e
               virar um programador FullStack. Venho me dedicando em diversos
               projetos pessoais os quais sempre compartilho em meu repositório
-              no
-              <a href="https://github.com/wesleyara">GitHub</a> .
+              no <a href="https://github.com/wesleyara">GitHub</a>.
             </p>
             <br />
             <p className="paragraph">

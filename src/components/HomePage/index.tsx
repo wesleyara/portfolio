@@ -24,7 +24,7 @@ export default function HomePage() {
     new Typed("#title", options);
   }, []);
   return (
-    <Container data-aos="fade-down">
+    <Container>
       <span className="profileImage">
         <Image layout="responsive" src={perfilImg} alt="foto" />
       </span>

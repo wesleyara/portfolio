@@ -7,7 +7,7 @@ export function Form() {
   }
 
   return (
-    <Container data-aos="fade-left" onSubmit={handleMessageSubmit}>
+    <Container data-aos="fade-up" onSubmit={handleMessageSubmit}>
       <h2>Entre em contato comigo!</h2>
       <label htmlFor="name">Nome:</label>
       <input type="text" id="name" placeholder="Seu Nome" />

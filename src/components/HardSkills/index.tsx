@@ -8,7 +8,7 @@ import { Container } from "./styles";
 export default function HardSkills() {
   return (
     <>
-      <Container data-aos="fade-right">
+      <Container data-aos="fade-up">
         <h2 className="subTitle">Habilidades</h2>
         <div className="skillsContainer">
           <div data-aos="fade-up">
