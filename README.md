@@ -1,31 +1,65 @@
-# Meu portfólio.
+# Meu Portfólio
 
-![portfolio](https://user-images.githubusercontent.com/89321125/155370426-391d608d-9b31-46e0-b060-0b71561c2e7c.png)
+O Portfólio é um site que contém informações sobre mim e meus projetos, além de links para os mesmos.
 
-### Contatos e redes sociais:
+Nele é possível consultar a minha trajetória e aprender mais sobre mim.
 
-<div style="display: inline_block">
-  <a href="mailto:wesleyara.contato@gmail.com"><img alt="Wesley-GMAIL" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/wesley-gomes-de-araújo-534a66221/"><img alt="Wesley-LINKE" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://www.instagram.com/wesleyaraujo_w/"><img alt="Wesley-INSTA" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-</div>
-
-### Linguagens utilizadas:
-
-<div style="display: inline_block;">
-  <img target="_blank" align="center" alt="Wesley-TS" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-  <img target="_blank" align="center" alt="Wesley-NEXT" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
-  <img align="center" alt="Wesley-SASS" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"> 
-</div>
-<br>
-
-## Descrição
-
-Olá, me chamo Wesley Gomes de Araújo e esse repositório é dedicado a criação do meu primeiro portfólio profissional.
-O portfólio v2 nada mais é do que uma versão melhorada do meu primeiro portfólio, implementando a utilização de React.js e futuramente Next.js na estrutura do site.
 Link para acessar o site: <a href="https://wesleyaraujo.dev/">Wesley Araújo | Portfólio</a>.
 
+![portfolio](/src/assets/images/portfolio.png)
 
-Com intuito de mostrar mais sobre o meu trabalho como Desenvolvedor Web, criei esse portfólio para que as pessoas consigam ver o que já fiz nesses meses desde que iniciei meus estudos em programação.
 
-Nele está contido meus mais recentes projetos e criações, contando com links importantes para os mesmos e para o contato com o criador, que sou eu.
+## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+### 📋 Pré-requisitos
+
+Você precisará do Node.js, git e do npm (ou yarn) para executar os comandos abaixo.
+
+### 🔧 Instalação
+
+Para instalar o projeto, execute os comandos abaixo:
+
+```sh
+# Clonando o repositório
+$ git clone https://github.com/wesleyara/portfolio-v2.git
+
+# Instalando dependências
+$ npm install
+# ou
+$ yarn
+```
+
+Para executar a aplicação com node
+
+```sh
+$ npm start
+# ou
+$ yarn start
+```
+
+Para executar a aplicação com Docker
+```sh
+# Gerando a imagem:
+$ docker build -t portfolio-v2 .
+
+# Executando a imagem:
+$ docker run -p  3000:3000 -it --rm portfolio-v2
+```
+
+## 🛠️ Construído com
+
+Mencione as ferramentas que você usou para criar seu projeto
+
+* Nextjs - O framework ReactJS que permite a criação de sites dinâmicos
+* TypeScript - O superset do JS que adiciona tipagem.
+* Styled-components - A lib para criação de componentes estilizados.
+
+## ✒️ Autores
+
+* **Wesley Araújo** - *Trabalho Inicial* - [Github](https://github.com/wesleyara)
+
+## 📄 Licença
+
+Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](/LICENSE) para detalhes.
