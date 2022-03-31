@@ -8,7 +8,6 @@ RUN yarn
 
 COPY . .
 
-RUN set -x \
-  && yarn test \
-  && yarn lint \
-  && echo "Build successful"
+EXPOSE 3000
+
+CMD [ "yarn", "dev" ]
