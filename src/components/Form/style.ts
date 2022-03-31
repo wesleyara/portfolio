@@ -31,7 +31,7 @@ export const Container = styled.form`
     transition: 0.2s ease-in-out;
 
     &:hover {
-      background-color: #c0ea77;
+      background-color: ${(props) => props.theme.colors.text};
     }
   }
 `;
