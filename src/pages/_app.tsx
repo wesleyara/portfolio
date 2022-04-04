@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme === "light" ? themeLight : themeDark}>
       <Head>
-        <title>Wesley Araújo | Portfólio</title>
+        <title>Wesley Araújo</title>
         <link rel="shortcut icon" href="./icon.png" />
       </Head>
       <GlobalStyle />
