@@ -19,6 +19,11 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.text};
   }
 
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.text};
+  }
+
   .paragraph {
     font-size: calc(max(16px, 1.31vw));
   }
@@ -27,15 +32,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 26pt;
   }
 
-  a {
-    text-decoration: none;
-    color: greenyellow;
-  }
-
   .containerError {
     width: 90%;
     margin: auto;
-   text-align: center;
+    text-align: center;
     margin-top: 150px;
     font-size: 20px;
 
