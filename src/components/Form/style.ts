@@ -32,6 +32,7 @@ export const Container = styled.form`
 
     &:hover {
       background-color: ${(props) => props.theme.colors.text};
+      color: ${(props) => props.theme.colors.background};
     }
   }
 `;
