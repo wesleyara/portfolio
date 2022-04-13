@@ -31,13 +31,13 @@ export function Header({ eventFunction }: HeaderProps) {
 
         <ul>
           <Link href="/blog">
-            <li>Blog</li>
+            <li onClick={handleActive}>Blog</li>
           </Link>
           <Link href="/">
-            <li>Portfólio</li>
+            <li onClick={handleActive}>Portfólio</li>
           </Link>
           <Link href="/github">
-            <li>Github</li>
+            <li onClick={handleActive}>Github</li>
           </Link>
           <li className="theme" onClick={eventFunction}>
             <BiMoon />
