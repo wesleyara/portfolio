@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 5px;
   border-bottom: 10px solid ${(props) => props.theme.colors.card};
   cursor: pointer;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.card};
 
   h2 {
     margin-top: 5px;
