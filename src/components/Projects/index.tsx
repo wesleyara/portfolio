@@ -21,7 +21,7 @@ export default function Projects() {
         <div className="projectsContainer">
           <ProjectsBox
             title="Expense"
-            link="https://github.com/expense"
+            link="https://github.com/wesleyara/expense"
             src={expense}
             img1="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
             img2="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
