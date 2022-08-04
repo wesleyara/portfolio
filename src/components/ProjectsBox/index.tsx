@@ -1,33 +1,55 @@
-import Image, { StaticImageData } from "next/image";
-import { Container } from "./style";
-
-interface ProjectsBoxProps {
-  link: string;
-  src: StaticImageData;
-  title: string;
-  img1: string;
-  img2: string;
-}
+import Image from "next/image";
+import { Container, SecondContainer } from "./style";
+import { BsInfoCircle } from "react-icons/bs";
+import { useState } from "react";
+import { IProject } from "../../@types";
 
 export default function ProjectsBox({
   link,
   src,
   title,
-  img1,
-  img2,
-}: ProjectsBoxProps) {
+  imgs,
+  description,
+}: IProject) {
+  const [infoIsOpen, setInfoIsOpen] = useState(false);
+
   return (
-    <a target="_blank" href={link} rel="noreferrer">
-      {" "}
-      <Container data-aos="fade-up">
-        <Image layout="responsive" className="img" src={src} alt="image" />
-        <h2>{title}</h2>
-        <div>
-          {" "}
-          <img src={img1} alt="image" />
-          <img src={img2} alt="image" />
-        </div>
-      </Container>
-    </a>
+    <>
+      {!infoIsOpen ? (
+        <Container>
+          <button onClick={() => setInfoIsOpen(true)}>
+            <BsInfoCircle size={25} />
+          </button>
+
+          <Image
+            width={350}
+            height={180}
+            className="img"
+            src={src}
+            alt="image"
+            onClick={() => open(link)}
+          />
+
+          <h2>{title}</h2>
+
+          <span>
+            {imgs.map((item, index) => (
+              <img key={index} src={item} alt="image" />
+            ))}
+          </span>
+        </Container>
+      ) : (
+        <SecondContainer>
+          <button onClick={() => setInfoIsOpen(false)}>
+            <BsInfoCircle size={25} />
+          </button>
+
+          <h2>{title}</h2>
+          <p>{description}</p>
+
+          <span onClick={() => open(link)}>Repositório</span>
+        </SecondContainer>
+      )}
+    </>
   );
 }
