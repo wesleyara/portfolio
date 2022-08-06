@@ -6,6 +6,7 @@
     "jest": true
   },
   "extends": [
+    "standard",
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
@@ -26,15 +27,25 @@
     "prettier"
   ],
   "rules": {
-    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
-    "import/prefer-default-export": "off",
-    "no-unused-vars": [
-      "error",
+    "@typescript-eslint/ban-types": "off",
+    "no-unused-vars": "off",
+    "react/prop-types": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "array-callback-return": "off",
+    "import-helpers/order-imports": [
+      "warn",
       {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_"
+        "newlinesBetween": "always",
+        "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
       }
     ]
   },
