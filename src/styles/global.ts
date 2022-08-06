@@ -15,13 +15,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
   }
 
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.colors.text};
+    color: ${props => props.theme.colors.text};
   }
 
   .paragraph {

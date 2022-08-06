@@ -10,7 +10,7 @@ export const Container = styled.section`
 
   div {
     width: max(300px, 29.28vw);
-    border: 1px solid ${(props) => props.theme.colors.text};
+    border: 1px solid ${props => props.theme.colors.text};
     padding-bottom: 10px;
     min-width: 300px;
 
@@ -44,17 +44,17 @@ export const ContainerRepos = styled.section`
     justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
-    color: ${(props) => props.theme.colors.card};
+    color: ${props => props.theme.colors.card};
 
     div {
-      border: 1px solid ${(props) => props.theme.colors.text};
+      border: 1px solid ${props => props.theme.colors.text};
       padding: 30px;
       width: 300px;
       height: 220px;
       transition: transform 0.3s ease-in-out;
 
       h3 {
-        color: ${(props) => props.theme.colors.card};
+        color: ${props => props.theme.colors.card};
         &:hover {
           text-decoration: underline;
         }
@@ -71,13 +71,13 @@ export const ContainerRepos = styled.section`
       }
 
       &:hover {
-        background: ${(props) => props.theme.colors.card};
-        color: ${(props) => props.theme.colors.cardBack};
+        background: ${props => props.theme.colors.card};
+        color: ${props => props.theme.colors.cardBack};
         transform: scale(1.1);
       }
 
       &:hover h3 {
-        color: ${(props) => props.theme.colors.cardBack};
+        color: ${props => props.theme.colors.cardBack};
       }
     }
   }
