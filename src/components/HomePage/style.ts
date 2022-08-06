@@ -46,13 +46,13 @@ export const Container = styled.main`
     margin-left: 10px;
     font-size: 40px;
     padding: 2px;
-    color: ${(props) => props.theme.colors.text};
+    color: ${props => props.theme.colors.text};
     cursor: pointer;
     border-bottom: 1px solid transparent;
   }
 
   svg:hover {
-    border-bottom: 1px solid ${(props) => props.theme.colors.text};
+    border-bottom: 1px solid ${props => props.theme.colors.text};
   }
 
   .networksBx {
@@ -78,7 +78,7 @@ export const Container = styled.main`
     width: calc(max(5.49vw, 50px));
     height: calc(max(5.49vw, 50px));
     margin-top: 15px;
-    background-color: ${(props) => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.text};
     animation: rot 3s ease-in-out infinite;
   }
 `;

@@ -20,7 +20,7 @@ export const Container = styled.section`
     }
 
     a {
-      color: ${(props) => props.theme.colors.text};
+      color: ${props => props.theme.colors.text};
     }
 
     a:hover {

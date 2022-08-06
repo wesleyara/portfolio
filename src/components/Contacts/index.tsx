@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { Container } from "./style";
 

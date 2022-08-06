@@ -20,7 +20,7 @@ export const Container = styled.section`
 
       a {
         text-decoration: underline;
-        color: ${(props) => props.theme.colors.text};
+        color: ${props => props.theme.colors.text};
       }
     }
 

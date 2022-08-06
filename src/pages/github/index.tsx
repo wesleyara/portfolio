@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Container, ContainerRepos } from "../../styles/github";
-
 import { AiOutlineStar } from "react-icons/ai";
+
+import { Container, ContainerRepos } from "../../styles/github";
 
 interface DataTypes {
   avatar_url: string;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.background};
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
@@ -28,8 +28,8 @@ export const Container = styled.header`
       transition: 0.2s ease-in-out;
 
       &:hover {
-        background-color: ${(props) => props.theme.colors.text};
-        color: ${(props) => props.theme.colors.background};
+        background-color: ${props => props.theme.colors.text};
+        color: ${props => props.theme.colors.background};
       }
     }
 
@@ -37,8 +37,8 @@ export const Container = styled.header`
       transition: 0ms;
 
       &:hover {
-        background-color: ${(props) => props.theme.colors.background};
-        color: ${(props) => props.theme.colors.text};
+        background-color: ${props => props.theme.colors.background};
+        color: ${props => props.theme.colors.text};
       }
     }
   }
@@ -54,8 +54,8 @@ export const Container = styled.header`
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: ${(props) => props.theme.colors.background};
-      color: ${(props) => props.theme.colors.text};
+      background-color: ${props => props.theme.colors.background};
+      color: ${props => props.theme.colors.text};
       border: none;
       cursor: pointer;
       padding: 5px;
@@ -73,8 +73,8 @@ export const Container = styled.header`
       z-index: 999;
       visibility: hidden;
       overflow: hidden;
-      background-color: ${(props) => props.theme.colors.background};
-      color: ${(props) => props.theme.colors.text};
+      background-color: ${props => props.theme.colors.background};
+      color: ${props => props.theme.colors.text};
 
       li {
         padding: 15px 2rem;

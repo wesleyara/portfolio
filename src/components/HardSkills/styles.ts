@@ -17,13 +17,13 @@ export const Container = styled.section`
       width: 200px;
       height: 150px;
       margin-top: 20px;
-      background-color: ${(props) => props.theme.colors.cardBack};
+      background-color: ${props => props.theme.colors.cardBack};
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 5px;
-      border-bottom: 10px solid ${(props) => props.theme.colors.card};
-      color: ${(props) => props.theme.colors.card};
+      border-bottom: 10px solid ${props => props.theme.colors.card};
+      color: ${props => props.theme.colors.card};
       transition: 0.3s ease-in-out;
       cursor: pointer;
 
@@ -35,12 +35,12 @@ export const Container = styled.section`
     }
 
     div:hover {
-      border-color: ${(props) => props.theme.colors.cardBack};
-      background-color: ${(props) => props.theme.colors.card};
+      border-color: ${props => props.theme.colors.cardBack};
+      background-color: ${props => props.theme.colors.card};
       transform: scale(1.1);
 
       svg {
-        color: ${(props) => props.theme.colors.cardBack};
+        color: ${props => props.theme.colors.cardBack};
       }
     }
   }

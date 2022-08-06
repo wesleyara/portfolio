@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import matematicaImg from "../../assets/images/image-matematica.jpg";
 import { Container } from "./style";
 

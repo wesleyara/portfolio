@@ -7,11 +7,11 @@ export const Container = styled.footer`
   margin: 0 auto;
   padding: 30px 1rem;
   flex-wrap: wrap;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.background};
 
   .copyright:hover {
     text-decoration: underline;
-    color: ${(props) => props.theme.colors.text};
+    color: ${props => props.theme.colors.text};
   }
 
   ul {
@@ -23,8 +23,8 @@ export const Container = styled.footer`
       transition: 0.2s ease-in-out;
 
       &:hover {
-        background-color: ${(props) => props.theme.colors.text};
-        color: ${(props) => props.theme.colors.background};
+        background-color: ${props => props.theme.colors.text};
+        color: ${props => props.theme.colors.background};
       }
     }
   }

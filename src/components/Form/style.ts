@@ -31,8 +31,8 @@ export const Container = styled.form`
     transition: 0.2s ease-in-out;
 
     &:hover {
-      background-color: ${(props) => props.theme.colors.text};
-      color: ${(props) => props.theme.colors.background};
+      background-color: ${props => props.theme.colors.text};
+      color: ${props => props.theme.colors.background};
     }
   }
 `;

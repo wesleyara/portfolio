@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { Container, SecondContainer } from "./style";
-import { BsInfoCircle } from "react-icons/bs";
 import { useState } from "react";
+import { BsInfoCircle } from "react-icons/bs";
+
 import { IProject } from "../../@types";
+import { Container, SecondContainer } from "./style";
 
 export default function ProjectsBox({
   link,

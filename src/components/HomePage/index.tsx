@@ -1,11 +1,10 @@
-import perfilImg from "../../assets/images/app_development_SVG.svg";
-
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
 import Image from "next/image";
-
-import Typed from "typed.js";
 import { useEffect } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Typed from "typed.js";
+
+import perfilImg from "../../assets/images/app_development_SVG.svg";
 import { Container } from "./style";
 
 export default function HomePage() {
@@ -20,6 +19,7 @@ export default function HomePage() {
       backSpeed: 50,
     };
 
+    // eslint-disable-next-line no-new
     new Typed("#title", options);
   }, []);
   return (

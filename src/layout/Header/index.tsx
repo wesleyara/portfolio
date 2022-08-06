@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { MouseEventHandler, useState } from "react";
 import { BiMoon } from "react-icons/bi";
-
-import { GiHamburgerMenu } from "react-icons/gi";
 import { CgMenuMotion } from "react-icons/cg";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Container } from "./style";
 
