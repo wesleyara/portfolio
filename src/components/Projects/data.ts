@@ -79,17 +79,6 @@ export const projects: IProject[] = [
       "Este projeto foi desenvolvido com intuito de ajudar um amigo a divulgar seu curso online gratuito, nele você registrava o email e todos os dias chegava notificação sobre as aulas, utilizando o Mailchimp.",
   },
   {
-    title: "Chili Peppers Pizzaria",
-    link: "https://github.com/wesleyara/chili-peppers-pizzaria",
-    src: "/img/projects/chilipeppers.png",
-    imgs: [
-      "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-      "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
-    ],
-    description:
-      "A Delivery Pizzaria é um projeto de criação de um site para uma pizzaria, onde podemos criar um catálogo das pizzas do estabelecimento e também ligar a compra dos produtos com meios de vendas mais simples.",
-  },
-  {
     title: "Mat Package",
     link: "https://github.com/wesleyara/mat-package",
     src: "/img/projects/matpackage.png",
