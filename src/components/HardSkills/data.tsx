@@ -1,28 +1,19 @@
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3, DiJavascript1 } from "react-icons/di";
-import { FaNodeJs, FaReact, FaSass } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaLinux } from "react-icons/fa";
 import { GrDocker } from "react-icons/gr";
-import { SiPuppeteer, SiTypescript, SiJest } from "react-icons/si";
+import {
+  SiPuppeteer,
+  SiTypescript,
+  SiJest,
+  SiNextdotjs,
+  SiGnubash,
+  SiTailwindcss,
+} from "react-icons/si";
 
 export const skill = [
   {
     component: (
       <div data-aos="fade-up">
-        <AiFillHtml5 />
-      </div>
-    ),
-  },
-  {
-    component: (
-      <div data-aos="fade-up">
-        <DiCss3 />
-      </div>
-    ),
-  },
-  {
-    component: (
-      <div data-aos="fade-up">
-        <DiJavascript1 />
+        <SiNextdotjs />
       </div>
     ),
   },
@@ -57,13 +48,6 @@ export const skill = [
   {
     component: (
       <div data-aos="fade-up">
-        <SiJest />
-      </div>
-    ),
-  },
-  {
-    component: (
-      <div data-aos="fade-up">
         <SiPuppeteer />
       </div>
     ),
@@ -71,7 +55,28 @@ export const skill = [
   {
     component: (
       <div data-aos="fade-up">
-        <FaSass />
+        <SiJest />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiGnubash />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiTailwindcss />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <FaLinux />
       </div>
     ),
   },
