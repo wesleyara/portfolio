@@ -23,29 +23,29 @@ Para instalar o projeto, execute os comandos abaixo:
 
 ```sh
 # Clonando o repositório
-$ git clone https://github.com/wesleyara/portfolio-v2.git
+git clone https://github.com/wesleyara/portfolio-v2.git
 
 # Instalando dependências
-$ npm install
+npm install
 # ou
-$ yarn
+yarn
 ```
 
 Para executar a aplicação com node
 
 ```sh
-$ npm start
+npm start
 # ou
-$ yarn start
+yarn start
 ```
 
 Para executar a aplicação com Docker
 ```sh
 # Gerando a imagem:
-$ docker build -t portfolio-v2 .
+docker build -t portfolio-v2 .
 
 # Executando a imagem:
-$ docker run -p  3000:3000 -it --rm portfolio-v2
+docker run -p  3000:3000 -it --rm portfolio-v2
 ```
 
 ## 🛠️ Construído com
