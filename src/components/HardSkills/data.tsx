@@ -1,4 +1,4 @@
-import { FaNodeJs, FaReact, FaLinux } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaLinux, FaGitAlt, FaNpm } from "react-icons/fa";
 import { GrDocker } from "react-icons/gr";
 import {
   SiPuppeteer,
@@ -7,6 +7,9 @@ import {
   SiNextdotjs,
   SiGnubash,
   SiTailwindcss,
+  SiLatex,
+  SiExpress,
+  SiRedux,
 } from "react-icons/si";
 
 export const skill = [
@@ -48,20 +51,6 @@ export const skill = [
   {
     component: (
       <div data-aos="fade-up">
-        <SiPuppeteer />
-      </div>
-    ),
-  },
-  {
-    component: (
-      <div data-aos="fade-up">
-        <SiJest />
-      </div>
-    ),
-  },
-  {
-    component: (
-      <div data-aos="fade-up">
         <SiGnubash />
       </div>
     ),
@@ -77,6 +66,55 @@ export const skill = [
     component: (
       <div data-aos="fade-up">
         <FaLinux />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <FaGitAlt />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiExpress />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <FaNpm />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiRedux />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiPuppeteer />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiJest />
+      </div>
+    ),
+  },
+  {
+    component: (
+      <div data-aos="fade-up">
+        <SiLatex />
       </div>
     ),
   },
