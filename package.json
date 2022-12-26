@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
-  "lint-staged" : {
+  "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --ext .js,.jsx,.ts,.tsx src --fix",
       "prettier --write --ext .js,.jsx,.ts,.tsx src"
@@ -22,7 +22,8 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.5",
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.12",
+    "utils-react": "^1.0.4"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
