@@ -16,6 +16,7 @@ export const Container = styled.header`
   h2 {
     padding: 20px;
     font-size: 20pt;
+    cursor: pointer;
   }
 
   ul {

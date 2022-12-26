@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { MouseEventHandler, useState } from "react";
 import { BiMoon } from "react-icons/bi";
 import { CgMenuMotion } from "react-icons/cg";
@@ -17,10 +18,19 @@ export function Header({ eventFunction }: HeaderProps) {
     setActive(!active);
   }
 
+  const router = useRouter();
+
   return (
     <Container>
       <div>
-        <h2>&lt;Portfólio /&gt;</h2>
+        <h2
+          onClick={() => {
+            handleActive();
+            router.push("/");
+          }}
+        >
+          &lt;Portfólio /&gt;
+        </h2>
       </div>
 
       <nav className={active ? "active" : ""}>
