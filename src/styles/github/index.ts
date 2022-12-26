@@ -13,27 +13,62 @@ export const Container = styled.section`
     border: 1px solid ${props => props.theme.colors.text};
     padding-bottom: 10px;
     min-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
 
     img {
       width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    a {
+      position: absolute;
+      right: 5px;
+      bottom: 3px;
     }
 
     span {
-      display: block;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    p {
-      margin-top: 10px;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10px;
     }
   }
 `;
 
 export const ContainerRepos = styled.section`
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  section {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    select {
+      padding: 5px;
+      border: 1px solid ${props => props.theme.colors.text};
+      border-radius: 5px;
+      background: ${props => props.theme.colors.background};
+      color: ${props => props.theme.colors.text};
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
   h2 {
     text-align: center;
   }
@@ -42,16 +77,22 @@ export const ContainerRepos = styled.section`
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
     color: ${props => props.theme.colors.card};
 
     div {
       border: 1px solid ${props => props.theme.colors.text};
-      padding: 30px;
-      width: 300px;
-      height: 220px;
+      padding: 20px 30px;
+      width: 250px;
+      height: 180px;
       transition: transform 0.3s ease-in-out;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
 
       h3 {
         color: ${props => props.theme.colors.card};
@@ -61,13 +102,19 @@ export const ContainerRepos = styled.section`
       }
 
       p {
-        margin-top: 10px;
+        text-align: justify;
+        font-size: 14px;
+        height: 68px;
+        overflow-y: auto;
       }
 
       span {
         display: flex;
         align-items: center;
-        margin-top: 10px;
+        gap: 2px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
       }
 
       &:hover {
