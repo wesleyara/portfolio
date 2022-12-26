@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .paragraph {
-    font-size: calc(max(16px, 1.31vw));
+    font-size: clamp(16px, 1.31vw, 20px);
   }
 
   .subTitle {

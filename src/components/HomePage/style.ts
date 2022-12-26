@@ -25,7 +25,7 @@ export const Container = styled.main`
     min-width: 300px;
 
     h1 {
-      font-size: calc(max(25px, 3.29vw));
+      font-size: clamp(25px, 3.29vw, 47px);
       display: inline;
     }
   }
@@ -37,7 +37,7 @@ export const Container = styled.main`
   }
 
   .typed-cursor {
-    font-size: calc(max(30px, 4vw));
+    font-size: clamp(30px, 4vw, 50px);
     opacity: 1;
     animation: typedjsBlink 0.7s infinite;
   }
