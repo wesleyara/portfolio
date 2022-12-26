@@ -65,4 +65,35 @@ export const GlobalStyle = createGlobalStyle`
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.background};
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 768px;
+
+    .esc {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      transform: translate(-5px, -5px);
+      padding: 5px;
+      font-size: 24px;
+      background-color: transparent;
+      border: none;
+      color: ${props => props.theme.colors.background};
+      font-weight: 700;
+    }
+
+    .content {
+      margin-top: 30px;
+    }
+  }
 `;
