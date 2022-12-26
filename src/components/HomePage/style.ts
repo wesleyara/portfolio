@@ -59,26 +59,4 @@ export const Container = styled.main`
     text-align: center;
     margin-top: 60px;
   }
-
-  @keyframes rot {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .bxAnimation {
-    position: absolute;
-    top: 75%;
-    left: 85%;
-    transform: translate(-85%, -75%);
-    width: calc(max(5.49vw, 50px));
-    height: calc(max(5.49vw, 50px));
-    margin-top: 15px;
-    background-color: ${props => props.theme.colors.text};
-    animation: rot 3s ease-in-out infinite;
-  }
 `;

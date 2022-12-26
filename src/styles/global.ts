@@ -44,4 +44,25 @@ export const GlobalStyle = createGlobalStyle`
       text-decoration: underline;
     }
   }
+
+*::-webkit-scrollbar {
+  width: 12px !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: ${props => props.theme.colors.background};
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: ${props => props.theme.colors.text};
+  border-radius: 20px;
+  border: 1px solid black;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
 `;
