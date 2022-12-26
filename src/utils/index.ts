@@ -14,13 +14,12 @@ export const formatDate = (date: Date) => {
   const formattedDate =
     months > 0
       ? years > 0
-        ? `${years} ano${years > 1 ? "s" : ""} ${
+        ? `${years} ano${years > 1 ? "s" : ""}${
             monthsWithoutYears > 0
-              ? `e ${monthsWithoutYears} ${
+              ? ` e ${monthsWithoutYears} ${
                   monthsWithoutYears > 1 ? "meses" : "mês"
                 }`
               : ""
-          }
           }`
         : `${months} ${months > 1 ? "meses" : "mês"}`
       : `${days} ${days > 1 ? "dias" : "dia"}`;
