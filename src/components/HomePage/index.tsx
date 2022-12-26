@@ -60,7 +60,6 @@ export default function HomePage() {
             <AiOutlineMail />
           </a>
         </div>
-        <div className="bxAnimation"></div>
       </div>
     </Container>
   );
