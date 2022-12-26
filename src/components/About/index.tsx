@@ -1,9 +1,20 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import matematicaImg from "../../assets/images/image-matematica.jpg";
+import { formatDate } from "../../utils";
 import { Container } from "./style";
 
+const date = new Date("2022-04-21");
+
 export default function About() {
+  const [currentDate, setCurrentDate] = useState("0");
+
+  useEffect(() => {
+    const formattedDate = formatDate(date);
+    setCurrentDate(formattedDate);
+  }, []);
+
   return (
     <>
       <Container data-aos="fade-up">
@@ -12,17 +23,17 @@ export default function About() {
           <div className="descriptionAbout">
             <p className="paragraph">
               Meu nome é Wesley Gomes de Araújo, sou graduado em Licenciatura em
-              Matemática pela Universidade de Pernambuco. Atraído pela
-              tecnologia, em Setembro de 2021 iniciei meus estudos como
-              desenvolvedor.
+              Matemática pela Universidade de Pernambuco. Dei início aos meus
+              estudos na programação em Setembro de 2021 e já atuo no mercado de
+              desenvolvimento a mais de {currentDate}.
             </p>
             <br />
             <p className="paragraph">
-              Atualmente estou estudando sobre Desenvolvimento Web, me
-              aprofundando em front-end para futuramente avançar no back-end e
-              virar um programador FullStack. Venho me dedicando em diversos
-              projetos pessoais os quais sempre compartilho em meu repositório
-              no <a href="https://github.com/wesleyara">GitHub</a>.
+              Atualmente estou estudando e trabalhando com Desenvolvimento Web,
+              utilizando stack como Node, React e Typescript. Sempre me
+              dedicando em diversos projetos pessoais os quais compartilho em
+              meu repositório no{" "}
+              <a href="https://github.com/wesleyara">GitHub</a>.
             </p>
             <br />
             <p className="paragraph">
