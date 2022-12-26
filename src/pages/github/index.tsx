@@ -92,6 +92,7 @@ export default function Github() {
                   <h3>{item.name}</h3>
                 </a>
                 <p>{item.description}</p>
+                <b>{item.language}</b>
                 <span>
                   <AiOutlineStar /> {item.stargazers_count}
                 </span>

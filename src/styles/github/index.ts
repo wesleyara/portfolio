@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  max-width: 1100px;
+  max-width: 500px;
   margin: 20px auto;
   padding: 0 1rem;
   display: flex;
@@ -93,6 +93,7 @@ export const ContainerRepos = styled.section`
       display: flex;
       flex-direction: column;
       gap: 5px;
+      cursor: pointer;
 
       h3 {
         color: ${props => props.theme.colors.card};
@@ -114,6 +115,12 @@ export const ContainerRepos = styled.section`
         gap: 2px;
         position: absolute;
         right: 10px;
+        bottom: 10px;
+      }
+
+      b {
+        position: absolute;
+        left: 10px;
         bottom: 10px;
       }
 
