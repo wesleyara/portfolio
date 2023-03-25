@@ -1,4 +1,5 @@
 import { RepoTypes } from "../@types";
+import { api } from "../services/axios";
 
 export const formatDate = (date: Date) => {
   const now = new Date();
@@ -49,4 +50,12 @@ export const filterRepos = (type: string, repos: RepoTypes[]) => {
   }
 
   return repos;
+};
+
+export const trackerRequest = async (name: string) => {
+  try {
+    await api.post("/tracker", { name });
+  } catch (error) {
+    console.log(error);
+  }
 };
