@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Typed from "typed.js";
 
 import perfilImg from "../../assets/images/app_development_SVG.svg";
+import { trackerRequest } from "../../utils";
 import { Container } from "./style";
 
 export default function HomePage() {
@@ -39,6 +40,7 @@ export default function HomePage() {
 
         <div className="networksBx">
           <a
+            onClick={async () => await trackerRequest("github-button")}
             href="https://github.com/wesleyara"
             target="_blank"
             rel="noreferrer"
@@ -46,6 +48,7 @@ export default function HomePage() {
             <FaGithub />
           </a>
           <a
+            onClick={async () => await trackerRequest("linkedin-button")}
             href="https://www.linkedin.com/in/wesley-gomes-de-ara%C3%BAjo-534a66221/"
             target="_blank"
             rel="noreferrer"
@@ -53,6 +56,7 @@ export default function HomePage() {
             <FaLinkedin />
           </a>
           <a
+            onClick={async () => await trackerRequest("email-button")}
             href="mailto:wesleyara.contato@gmail.com"
             target="_blank"
             rel="noreferrer"

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BsInfoCircle } from "react-icons/bs";
 
 import { IProject } from "../../@types";
+import { trackerRequest } from "../../utils";
 import { Container, SecondContainer } from "./style";
 
 export default function ProjectsBox({
@@ -13,6 +14,11 @@ export default function ProjectsBox({
   description,
 }: IProject) {
   const [infoIsOpen, setInfoIsOpen] = useState(false);
+
+  const handleProjectOpen = async (link: string) => {
+    await trackerRequest("project-button");
+    open(link);
+  };
 
   return (
     <>
@@ -28,7 +34,7 @@ export default function ProjectsBox({
             className="img"
             src={src}
             alt="image"
-            onClick={() => open(link)}
+            onClick={() => handleProjectOpen(link)}
           />
 
           <h2>{title}</h2>

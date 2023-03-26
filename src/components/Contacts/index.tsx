@@ -1,6 +1,7 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+import { trackerRequest } from "../../utils";
 import { Container } from "./style";
 
 export default function Contacts() {
@@ -19,6 +20,7 @@ export default function Contacts() {
             <br />
             <strong>
               <a
+                onClick={async () => await trackerRequest("email-button")}
                 target="_blank"
                 href="mailto:wesleyara.contat@gmail.com"
                 rel="noreferrer"
@@ -37,6 +39,7 @@ export default function Contacts() {
             <br />
             <strong>
               <a
+                onClick={async () => await trackerRequest("github-button")}
                 target="_blank"
                 href="https://github.com/wesleyara"
                 rel="noreferrer"
@@ -55,6 +58,7 @@ export default function Contacts() {
             <br />
             <strong>
               <a
+                onClick={async () => await trackerRequest("linkedin-button")}
                 target="_blank"
                 href="https://www.linkedin.com/in/wesley-gomes-de-ara%C3%BAjo-534a66221/"
                 rel="noreferrer"
