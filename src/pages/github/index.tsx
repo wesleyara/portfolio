@@ -3,7 +3,7 @@ import { AiFillGithub, AiOutlineStar } from "react-icons/ai";
 
 import { DataTypes, RepoTypes } from "../../@types";
 import { Container, ContainerRepos } from "../../styles/github";
-import { filterRepos } from "../../utils";
+import { filterRepos, trackerRequest } from "../../utils";
 
 const URL_USER = "https://api.github.com/users/wesleyara";
 const URL_REPOS = "https://api.github.com/users/wesleyara/repos";
@@ -38,6 +38,7 @@ export default function Github() {
   useEffect(() => {
     userRequest();
     reposRequest();
+    trackerRequest("github");
   }, []);
 
   useEffect(() => {

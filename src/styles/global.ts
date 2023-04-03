@@ -32,6 +32,11 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 26pt;
   }
 
+  .url {
+    text-decoration: underline;
+    color: ${props => props.theme.colors.text};
+  }
+
   .containerError {
     width: 90%;
     margin: auto;

@@ -1,11 +1,13 @@
 import { FormEvent } from "react";
 
+import { trackerRequest } from "../../utils";
 import { Container } from "./style";
 
 export function Form() {
-  function handleMessageSubmit(e: FormEvent) {
+  const handleMessageSubmit = async (e: FormEvent) => {
     e.preventDefault();
-  }
+    await trackerRequest("form-button");
+  };
 
   return (
     <Container data-aos="fade-up" onSubmit={handleMessageSubmit}>

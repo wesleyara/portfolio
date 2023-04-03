@@ -11,7 +11,8 @@ export function Footer() {
         </a>
         <br />
         <p className="reserv">
-          2022&copy; Todos os direitos reservados - Wesley Araújo
+          {new Date().getFullYear()}&copy; Todos os direitos reservados - Wesley
+          Araújo
         </p>
       </div>
       <nav>

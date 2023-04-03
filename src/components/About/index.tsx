@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import matematicaImg from "../../assets/images/image-matematica.jpg";
-import { formatDate } from "../../utils";
+import { formatDate, trackerRequest } from "../../utils";
 import { Container } from "./style";
 
 const date = new Date("2022-04-21");
@@ -33,7 +33,13 @@ export default function About() {
               utilizando stack como Node, React e Typescript. Sempre me
               dedicando em diversos projetos pessoais os quais compartilho em
               meu repositório no{" "}
-              <a href="https://github.com/wesleyara">GitHub</a>.
+              <a
+                onClick={async () => await trackerRequest("github-button")}
+                href="https://github.com/wesleyara"
+              >
+                GitHub
+              </a>
+              .
             </p>
             <br />
             <p className="paragraph">

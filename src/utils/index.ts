@@ -1,4 +1,5 @@
 import { RepoTypes } from "../@types";
+import { api } from "../services/axios";
 
 export const formatDate = (date: Date) => {
   const now = new Date();
@@ -14,8 +15,12 @@ export const formatDate = (date: Date) => {
   const formattedDate =
     months > 0
       ? years > 0
-        ? `${years} anos e ${monthsWithoutYears} ${
-            monthsWithoutYears > 1 ? "meses" : "mês"
+        ? `${years} ano${years > 1 ? "s" : ""}${
+            monthsWithoutYears > 0
+              ? ` e ${monthsWithoutYears} ${
+                  monthsWithoutYears > 1 ? "meses" : "mês"
+                }`
+              : ""
           }`
         : `${months} ${months > 1 ? "meses" : "mês"}`
       : `${days} ${days > 1 ? "dias" : "dia"}`;
@@ -45,4 +50,12 @@ export const filterRepos = (type: string, repos: RepoTypes[]) => {
   }
 
   return repos;
+};
+
+export const trackerRequest = async (name: string) => {
+  try {
+    await api.post("/tracker", { name });
+  } catch (error) {
+    console.log(error);
+  }
 };
