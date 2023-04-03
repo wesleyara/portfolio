@@ -1,13 +1,20 @@
 import { createGlobalStyle } from "styled-components";
+import "@fontsource/inter";
+import "@fontsource/barlow";
 
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
   }
 
   ul {
@@ -25,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .paragraph {
-    font-size: clamp(16px, 1.31vw, 20px);
+    font-size: clamp(12px, 1.31vw, 18px);
   }
 
   .subTitle {

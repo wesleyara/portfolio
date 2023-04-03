@@ -27,7 +27,7 @@ export default function About() {
               estudos na programação em Setembro de 2021 e já atuo no mercado de
               desenvolvimento a mais de {currentDate}.
             </p>
-            <br />
+
             <p className="paragraph">
               Atualmente estou estudando e trabalhando com Desenvolvimento Web,
               utilizando stack como Node, React e Typescript. Sempre me
@@ -41,7 +41,7 @@ export default function About() {
               </a>
               .
             </p>
-            <br />
+
             <p className="paragraph">
               Tenho como objetivo contribuir o máximo para a equipe e a empresa,
               estou sempre disposto a aprender mais e me adaptar as diversas

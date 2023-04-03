@@ -32,9 +32,8 @@ export const Container = styled.div`
     border-radius: 50%;
   }
 
-  h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  h4 {
+    margin: 5px 0;
   }
 
   .img {

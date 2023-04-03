@@ -8,7 +8,7 @@ export const Container = styled.section`
 
   .contactContainer {
     margin: auto;
-    width: 60%;
+    width: 78%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -17,6 +17,10 @@ export const Container = styled.section`
     svg {
       font-size: 50px;
       margin-top: 20px;
+    }
+
+    div {
+      font-size: 14px;
     }
 
     a {

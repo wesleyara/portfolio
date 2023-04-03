@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AiFillGithub, AiOutlineStar } from "react-icons/ai";
 
 import { DataTypes, RepoTypes } from "../../@types";
+import { Meta } from "../../layout";
 import { Container, ContainerRepos } from "../../styles/github";
 import { filterRepos, trackerRequest } from "../../utils";
 
@@ -51,6 +52,10 @@ export default function Github() {
 
   return (
     <>
+      <Meta
+        title="Wesley Araújo - Github"
+        description="Portfólio de Wesley Araújo, desenvolvedor React, Node e Typescript."
+      />
       <Container>
         {data && (
           <div>
@@ -59,18 +64,18 @@ export default function Github() {
             <a target="_blank" href={data.html_url} rel="noreferrer">
               <AiFillGithub size={30} />
             </a>
-            <span>
-              <p>{data.bio}</p>
-              <p>
+            <section>
+              <span>{data.bio}</span>
+              <span>
                 Stars received: <b>{countStars}</b>
-              </p>
-              <p>
+              </span>
+              <span>
                 Followers: <b>{data.followers}</b>
-              </p>
-              <p>
+              </span>
+              <span>
                 Following: <b>{data.following}</b>
-              </p>
-            </span>
+              </span>
+            </section>
           </div>
         )}
       </Container>
@@ -90,7 +95,7 @@ export default function Github() {
             {filterRepos(filter, repos).map((item, index) => (
               <div key={index}>
                 <a target="_blank" href={item.html_url} rel="noreferrer">
-                  <h3>{item.name}</h3>
+                  <h4>{item.name}</h4>
                 </a>
                 <p>{item.description}</p>
                 <b>{item.language}</b>

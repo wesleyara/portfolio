@@ -15,8 +15,11 @@ export const Container = styled.section`
 
     .descriptionAbout {
       margin-top: 20px;
-      flex: 1.5;
+      padding-right: 10px;
+      flex: 1.3;
       min-width: 300px;
+      max-height: 303px;
+      overflow: auto;
 
       a {
         text-decoration: underline;

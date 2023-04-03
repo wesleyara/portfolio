@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+import { Meta } from "../../layout";
 import { Footer } from "../../layout/Footer";
 import { trackerRequest } from "../../utils";
 
@@ -9,8 +10,14 @@ export default function Blog() {
   }, []);
 
   return (
-    <div>
-      <Footer />
-    </div>
+    <>
+      <Meta
+        title="Wesley Araújo - Blog"
+        description="Portfólio de Wesley Araújo, desenvolvedor React, Node e Typescript."
+      />
+      <div>
+        <Footer />
+      </div>
+    </>
   );
 }

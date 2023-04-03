@@ -3,10 +3,11 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { ThemeProvider } from "styled-components";
 
-import { Header } from "../layout/Header";
+import { Header } from "../layout";
 import { GlobalStyle } from "../styles/global";
 import { themeDark, themeLight } from "../styles/theme";
 
@@ -24,7 +25,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme === "light" ? themeLight : themeDark}>
       <Head>
-        <title>Wesley Araújo</title>
         <link rel="shortcut icon" href="./icon.png" />
       </Head>
       <GlobalStyle />

@@ -25,7 +25,7 @@ export const Container = styled.main`
     min-width: 300px;
 
     h1 {
-      font-size: clamp(25px, 3.29vw, 47px);
+      font-size: clamp(25px, 3.29vw, 40px);
       display: inline;
     }
   }

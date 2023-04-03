@@ -31,7 +31,7 @@ export const Container = styled.section`
       bottom: 3px;
     }
 
-    span {
+    section {
       align-self: flex-start;
       display: flex;
       flex-direction: column;
@@ -84,7 +84,7 @@ export const ContainerRepos = styled.section`
 
     div {
       border: 1px solid ${props => props.theme.colors.text};
-      padding: 20px 30px;
+      padding: 10px 20px;
       width: 250px;
       height: 180px;
       transition: transform 0.3s ease-in-out;
@@ -106,6 +106,7 @@ export const ContainerRepos = styled.section`
         text-align: justify;
         font-size: 14px;
         height: 68px;
+        padding-right: 5px;
         overflow-y: auto;
       }
 

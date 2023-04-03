@@ -14,7 +14,7 @@ export default function Contacts() {
           <div>
             <AiOutlineMail />
             <strong>
-              <h1>E-mail</h1>
+              <h2>E-mail</h2>
             </strong>
             Entre em contato comigo!
             <br />
@@ -33,7 +33,7 @@ export default function Contacts() {
           <div>
             <FaGithub />
             <strong>
-              <h1>GitHub</h1>
+              <h2>GitHub</h2>
             </strong>
             Veja meus repositórios no GitHub!
             <br />
@@ -52,7 +52,7 @@ export default function Contacts() {
           <div>
             <FaLinkedin />
             <strong>
-              <h1>LinkedIn</h1>
+              <h2>LinkedIn</h2>
             </strong>
             Acesse meu perfil no LinkedIn
             <br />

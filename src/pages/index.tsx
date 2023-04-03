@@ -7,7 +7,7 @@ import { Form } from "../components/Form";
 import HardSkills from "../components/HardSkills";
 import HomePage from "../components/HomePage";
 import Projects from "../components/Projects";
-import { Footer } from "../layout/Footer";
+import { Footer, Meta } from "../layout";
 import { trackerRequest } from "../utils";
 
 const Home: NextPage = () => {
@@ -17,6 +17,10 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Meta
+        title="Wesley Araújo - Home"
+        description="Portfólio de Wesley Araújo, desenvolvedor React, Node e Typescript."
+      />
       <HomePage />
       <About />
       <HardSkills />

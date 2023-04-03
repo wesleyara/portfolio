@@ -37,7 +37,7 @@ export default function ProjectsBox({
             onClick={() => handleProjectOpen(link)}
           />
 
-          <h2>{title}</h2>
+          <h4>{title}</h4>
 
           <span>
             {imgs.map((item, index) => (

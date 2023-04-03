@@ -32,7 +32,6 @@ export default function HomePage() {
         <h1 id="title"></h1>
         <br />
         <p className="paragraph">Desenvolvedor Web</p>
-        <br />
         <p className="paragraph">
           Bem-vindo ao meu portfólio, estou sempre em busca de conhecimento e
           novas experiências. Role para baixo e descubra mais sobre mim!
