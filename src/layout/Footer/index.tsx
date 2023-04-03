@@ -9,7 +9,6 @@ export function Footer() {
         <a className="copyright" href="mailto:wesleyara.contato@gmail.com">
           <p>Desenvolvido por Wesley Araújo</p>
         </a>
-        <br />
         <p className="reserv">
           {new Date().getFullYear()}&copy; Todos os direitos reservados - Wesley
           Araújo

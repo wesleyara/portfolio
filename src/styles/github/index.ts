@@ -95,7 +95,7 @@ export const ContainerRepos = styled.section`
       gap: 5px;
       cursor: pointer;
 
-      h3 {
+      h4 {
         color: ${props => props.theme.colors.card};
         &:hover {
           text-decoration: underline;
@@ -131,7 +131,7 @@ export const ContainerRepos = styled.section`
         transform: scale(1.1);
       }
 
-      &:hover h3 {
+      &:hover h4 {
         color: ${props => props.theme.colors.cardBack};
       }
     }
