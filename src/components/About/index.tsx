@@ -22,17 +22,16 @@ export default function About() {
         <div className="aboutContainer">
           <div className="descriptionAbout">
             <p className="paragraph">
-              Meu nome é Wesley Gomes de Araújo, sou graduado em Licenciatura em
-              Matemática pela Universidade de Pernambuco. Dei início aos meus
-              estudos na programação em Setembro de 2021 e já atuo no mercado de
+              Me chamo Wesley Gomes de Araújo, sou graduado em Licenciatura em
+              Matemática pela Universidade de Pernambuco. Iniciei meus estudos
+              na área de programação em Setembro de 2021 e atuo no mercado de
               desenvolvimento a mais de {currentDate}.
             </p>
 
             <p className="paragraph">
-              Atualmente estou estudando e trabalhando com Desenvolvimento Web,
-              utilizando stack como Node, React e Typescript. Sempre me
-              dedicando em diversos projetos pessoais os quais compartilho em
-              meu repositório no{" "}
+              Atualmente estudo e trabalho com Desenvolvimento Web, utilizando
+              stack como Node, React e Typescript. Sempre me dedico em diversos
+              projetos pessoais os quais compartilho em meu repositório no{" "}
               <a
                 onClick={async () => await trackerRequest("github-button")}
                 href="https://github.com/wesleyara"
@@ -43,10 +42,11 @@ export default function About() {
             </p>
 
             <p className="paragraph">
-              Tenho como objetivo contribuir o máximo para a equipe e a empresa,
-              estou sempre disposto a aprender mais e me adaptar as diversas
-              situações as quais somos apresentados diariamente. Busco evoluir
-              como profissional e crescer dentro da empresa.
+              Procuro contribuir o máximo para o crescimento e melhora da equipe
+              e empresa que faço/farei parte, estou sempre disposto a aprender e
+              me adaptar as diversas situações e desafios propostos. Busco
+              evoluir como profissional e ampliar minhas experiências e
+              conhecimentos
             </p>
           </div>
 
