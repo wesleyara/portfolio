@@ -1,0 +1,33 @@
+h1 {
+  @apply text-5xl font-bold;
+  font-family: "Barlow", "sans-serif";
+}
+
+h2 {
+  @apply text-4xl font-bold;
+  font-family: "Barlow", "sans-serif";
+}
+
+h3 {
+  @apply text-3xl font-bold;
+  font-family: "Barlow", "sans-serif";
+}
+
+h4 {
+  @apply text-2xl font-bold;
+  font-family: "Barlow", "sans-serif";
+}
+
+h5 {
+  @apply text-xl font-bold;
+  font-family: "Barlow", "sans-serif";
+}
+
+span,
+p {
+  @apply font-inter text-base;
+}
+
+.window-width {
+  @apply w-11/12 sm:w-[640px] md:w-[768px] lg:w-[1024px];
+}

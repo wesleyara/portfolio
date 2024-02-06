@@ -1,65 +1,75 @@
-# Meu Portfólio
+# Nuxt 3 Minimal Starter
 
-O Portfólio é um site que contém informações sobre mim e meus projetos, além de links para os mesmos.
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-Nele é possível consultar a minha trajetória e aprender mais sobre mim.
+## Setup
 
-Link para acessar o site: <a href="https://wesleyaraujo.dev/">Wesley Araújo | Portfólio</a>.
+Make sure to install the dependencies:
 
-![portfolio](/src/assets/images/portfolio.png)
-
-
-## 🚀 Começando
-
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-
-### 📋 Pré-requisitos
-
-Você precisará do Node.js, git e do npm (ou yarn) para executar os comandos abaixo.
-
-### 🔧 Instalação
-
-Para instalar o projeto, execute os comandos abaixo:
-
-```sh
-# Clonando o repositório
-git clone https://github.com/wesleyara/portfolio-v2.git
-
-# Instalando dependências
+```bash
+# npm
 npm install
-# ou
-yarn
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-Para executar a aplicação com node
+## Development Server
 
-```sh
-npm start
-# ou
-yarn start
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
-Para executar a aplicação com Docker
-```sh
-# Gerando a imagem:
-docker build -t portfolio-v2 .
+## Production
 
-# Executando a imagem:
-docker run -p  3000:3000 -it --rm portfolio-v2
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
-## 🛠️ Construído com
+Locally preview production build:
 
-Mencione as ferramentas que você usou para criar seu projeto
+```bash
+# npm
+npm run preview
 
-* Nextjs - O framework ReactJS que permite a criação de sites dinâmicos
-* TypeScript - O superset do JS que adiciona tipagem.
-* Styled-components - A lib para criação de componentes estilizados.
+# pnpm
+pnpm run preview
 
-## ✒️ Autores
+# yarn
+yarn preview
 
-* **Wesley Araújo** - *Trabalho Inicial* - [Github](https://github.com/wesleyara)
+# bun
+bun run preview
+```
 
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE](/LICENSE) para detalhes.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
