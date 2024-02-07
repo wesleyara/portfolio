@@ -1,17 +1,15 @@
 <script setup lang="ts">
+import { handleNavigate } from "~/utils/";
+
 const handleScrollToForm = () => {
   const form = document.getElementById("about");
 
   if (form) {
     form.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
     });
   }
-};
-
-const handleNavigate = (url: string) => {
-  open(url);
 };
 </script>
 

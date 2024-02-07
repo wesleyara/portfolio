@@ -7,5 +7,6 @@
     <FramesAbout />
     <FramesHardSkills />
     <FramesProjects />
+    <FramesContact />
   </div>
 </template>

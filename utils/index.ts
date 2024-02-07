@@ -24,3 +24,7 @@ export const formatDate = (date: Date) => {
 
   return formattedDate;
 };
+
+export const handleNavigate = (url: string) => {
+  open(url);
+};

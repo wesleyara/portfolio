@@ -35,7 +35,11 @@ const dateFormated = formatDate(date);
       </article>
 
       <span style="flex: 1">
-        <NuxtImg src="/about-image.jpg" alt="Wesley Araújo" />
+        <NuxtImg
+          src="/about-image.jpg"
+          alt="Wesley Araújo"
+          class="rounded-md"
+        />
       </span>
     </div>
   </div>
