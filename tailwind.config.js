@@ -12,6 +12,7 @@ export default {
     `./Error.{js,ts,vue}`,
     `./error.{js,ts,vue}`,
     `./app.config.{js,ts}`,
+    "docs/content/**/*.md",
   ],
   theme: {
     extend: {
