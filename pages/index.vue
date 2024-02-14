@@ -4,7 +4,8 @@
   <div>
     <TheHeader />
     <FramesHome />
-    <FramesAbout />
+    <!-- <FramesAbout /> -->
+    <FramesLearnMore />
     <FramesHardSkills />
     <FramesProjects />
     <FramesContact />

@@ -122,3 +122,32 @@ export const mapProjects = [
     preview: "https://image-resize-alpha.vercel.app/",
   },
 ];
+
+export const learnMoreMap = [
+  {
+    label: "Saiba mais",
+    color: "white",
+    variant: "outline",
+    size: "md",
+    icon: "i-heroicons-information-circle",
+    content:
+      "Me chamo Wesley Gomes de Araújo, tenho 23 anos de idade. Sou pernambucano e um desenvolvedor de software apaixonado por tecnologia e inovação.",
+  },
+  {
+    label: "Formação acadêmica",
+    color: "white",
+    variant: "outline",
+    size: "md",
+    icon: "i-heroicons-academic-cap",
+    slot: "formation",
+  },
+  {
+    label: "Experiência",
+    color: "white",
+    variant: "outline",
+    size: "md",
+    icon: "i-heroicons-arrow-trending-up",
+    content:
+      "Já trabalhei como professor de Matemática e atualmente eu atuo como Desenvolvedor de Software a mais de 2 anos. Dentre as minhas atribuições, destaco a criação de aplicações web, criação de APIs e gerenciamento de instâncias e alguns outros serviços dentro da AWS.",
+  },
+];
