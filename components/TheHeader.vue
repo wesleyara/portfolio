@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { linkMap } from "~/utils/constants";
+
 const handleScrollToId = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
@@ -16,28 +18,12 @@ const handleScrollToId = (id: string) => {
 
     <nav class="hidden md:flex">
       <span
+        v-for="item of linkMap"
+        :key="item.label"
         class="cursor-pointer px-4 py-2 hover:underline"
-        @click="handleScrollToId('about')"
+        @click="handleScrollToId(item.href)"
       >
-        Sobre
-      </span>
-      <span
-        class="cursor-pointer px-4 py-2 hover:underline"
-        @click="handleScrollToId('hard-skills')"
-      >
-        Habilidades
-      </span>
-      <span
-        class="cursor-pointer px-4 py-2 hover:underline"
-        @click="handleScrollToId('projects')"
-      >
-        Projetos
-      </span>
-      <span
-        class="cursor-pointer px-4 py-2 hover:underline"
-        @click="handleScrollToId('contact')"
-      >
-        Contato
+        {{ item.label }}
       </span>
     </nav>
   </header>

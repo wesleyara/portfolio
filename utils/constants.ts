@@ -151,3 +151,26 @@ export const learnMoreMap: any[] = [
       "Já trabalhei como professor de Matemática e atualmente eu atuo como Desenvolvedor de Software a mais de 2 anos. Dentre as minhas atribuições, destaco a criação de aplicações web, criação de APIs e gerenciamento de instâncias e alguns outros serviços dentro da AWS.",
   },
 ];
+
+export const linkMap = [
+  {
+    label: "Sobre",
+    href: "about",
+    icon: "i-heroicons-information-circle",
+  },
+  {
+    label: "Habilidades",
+    href: "skills",
+    icon: "carbon:3d-mpr-toggle",
+  },
+  {
+    label: "Projetos",
+    href: "projects",
+    icon: "flowbite:chart-outline",
+  },
+  {
+    label: "Contato",
+    href: "contact",
+    icon: "ri:contacts-book-3-line",
+  },
+];
