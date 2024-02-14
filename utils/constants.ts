@@ -123,7 +123,7 @@ export const mapProjects = [
   },
 ];
 
-export const learnMoreMap = [
+export const learnMoreMap: any[] = [
   {
     label: "Saiba mais",
     color: "white",
