@@ -8,8 +8,14 @@ import { learnMoreMap } from "~/utils/constants";
     <UAccordion :items="learnMoreMap">
       <template #formation>
         <ul>
-          <li> - Graduado em Licenciatura em Matemática pela Universidade de Pernambuco (2017-2021).</li>
-          <li> - Graduando em Análise e Desenvolvimento de Sistemas pela Estácio (2024).</li>
+          <li>
+            - Graduado em Licenciatura em Matemática pela Universidade de
+            Pernambuco (2017-2021).
+          </li>
+          <li>
+            - Graduando em Análise e Desenvolvimento de Sistemas pela Estácio
+            (2024).
+          </li>
         </ul>
       </template>
     </UAccordion>

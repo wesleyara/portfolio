@@ -4,7 +4,8 @@ useSeoMeta({
   description: "Portfólio do Desenvolvedor Wesley Araújo",
   ogTitle: "Portfólio - Wesley Araújo",
   ogDescription: "Portfólio do Desenvolvedor Wesley Araújo",
-  ogImage: "https://portfolio-vue-psi-nine.vercel.app/favicon.svg",
+  ogImage: "https://wesleyaraujo.dev/favicon.png",
+  ogImageUrl: "https://wesleyaraujo.dev/favicon.png",
 });
 
 useHead({
