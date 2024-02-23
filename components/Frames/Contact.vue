@@ -7,9 +7,9 @@ import { handleNavigate } from "~/utils/";
     <h2 id="contact" class="text-emerald-500">Contato</h2>
 
     <span
-      class="flex flex-col flex-wrap gap-8 md:flex-row md:justify-between md:gap-0"
+      class="flex flex-col flex-wrap items-center gap-8 md:flex-row md:justify-between md:gap-0"
     >
-      <span class="flex w-[235px] flex-col gap-1">
+      <span class="flex w-[235px] flex-col items-center gap-1">
         <Icon
           name="mdi:gmail"
           size="50"
@@ -26,7 +26,7 @@ import { handleNavigate } from "~/utils/";
         <span>Me envie um email!</span>
       </span>
 
-      <span class="flex w-[235px] flex-col gap-1">
+      <span class="flex w-[235px] flex-col items-center gap-1">
         <Icon
           name="mdi:linkedin"
           size="50"
@@ -43,7 +43,7 @@ import { handleNavigate } from "~/utils/";
         <span>Vamos nos conectar!</span>
       </span>
 
-      <span class="flex w-[235px] flex-col gap-1">
+      <span class="flex w-[235px] flex-col items-center gap-1">
         <Icon
           name="mdi:github"
           size="50"

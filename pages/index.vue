@@ -8,5 +8,6 @@
     <FramesHardSkills />
     <FramesProjects />
     <FramesContact />
+    <TheFooter />
   </div>
 </template>
