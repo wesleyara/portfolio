@@ -5,8 +5,8 @@
     <TheHeader ref="target" />
     <FramesHome />
     <FramesAbout />
-    <FramesHardSkills />
     <FramesProjects />
+    <FramesHardSkills />
     <FramesContact />
     <TheFooter />
   </div>

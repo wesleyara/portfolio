@@ -93,13 +93,13 @@ export const mapProjects = [
   },
   {
     id: 4,
-    title: "covid-forecast",
-    description: "Modelagem matemática para previsão de casos de COVID-19.",
-    image: "/images/covid-forecast.png",
-    type: "Lib",
-    stack: ["Node", "Typescript"],
-    repository: "https://github.com/wesleyara/covid-forecast/",
-    preview: "",
+    title: "Calculadora de PM",
+    description: "App para calcular preço médio alvo de ações.",
+    image: "/images/calculadorapm.png",
+    type: "Site",
+    stack: ["React", "TypeScript"],
+    repository: "https://github.com/wesleyara/image-resize",
+    preview: "https://image-resize-alpha.vercel.app/",
   },
   {
     id: 5,
@@ -113,13 +113,13 @@ export const mapProjects = [
   },
   {
     id: 6,
-    title: "Image Resize",
-    description: "Site para calcular dimensionamento de imagens.",
-    image: "/images/image-resize.png",
-    type: "Site",
-    stack: ["React", "TypeScript"],
-    repository: "https://github.com/wesleyara/image-resize",
-    preview: "https://image-resize-alpha.vercel.app/",
+    title: "covid-forecast",
+    description: "Modelagem matemática para previsão de casos de COVID-19.",
+    image: "/images/covid-forecast.png",
+    type: "Lib",
+    stack: ["Node", "Typescript"],
+    repository: "https://github.com/wesleyara/covid-forecast/",
+    preview: "",
   },
 ];
 
@@ -149,6 +149,15 @@ export const learnMoreMap: any[] = [
     icon: "i-heroicons-arrow-trending-up",
     content:
       "Já trabalhei como professor de Matemática e atualmente eu atuo como Desenvolvedor de Software a mais de 2 anos. Dentre as minhas atribuições, destaco a criação de aplicações web, criação de APIs e gerenciamento de instâncias e alguns outros serviços dentro da AWS.",
+  },
+  {
+    label: "Hobbies",
+    color: "white",
+    variant: "outline",
+    size: "md",
+    icon: "i-heroicons-map",
+    content:
+      "Meus principais hobbies são jogar video game, assistir séries e filmes, ler livros e ouvir música. Além disso, eu gosto muito de estudar e aprender coisas novas.",
   },
 ];
 
