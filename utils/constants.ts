@@ -99,7 +99,7 @@ export const mapProjects = [
     type: "Site",
     stack: ["React", "TypeScript"],
     repository: "https://github.com/wesleyara/image-resize",
-    preview: "https://image-resize-alpha.vercel.app/",
+    preview: "https://calculadora-de-pm-alvo-para-acoes.vercel.app/",
   },
   {
     id: 5,
