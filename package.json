@@ -36,6 +36,7 @@
     "@prisma/adapter-libsql": "^5.16.2",
     "@prisma/client": "^5.16.2",
     "@typescript-eslint/parser": "^6.21.0",
+    "axios": "^1.7.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
