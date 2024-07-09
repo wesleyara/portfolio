@@ -2,6 +2,7 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     "nuxt-icon",
     "@nuxtjs/google-fonts",
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/ui",
   ],
+
   googleFonts: {
     families: {
       Barlow: true,
@@ -16,4 +18,6 @@ export default defineNuxtConfig({
       "DM Sans": true,
     },
   },
+
+  compatibilityDate: "2024-07-09",
 });
