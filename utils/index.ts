@@ -1,3 +1,5 @@
+import { api } from "~/lib/axios";
+
 export const formatDate = (date: Date) => {
   const now = new Date();
 
@@ -27,4 +29,11 @@ export const formatDate = (date: Date) => {
 
 export const handleNavigate = (url: string) => {
   open(url);
+};
+
+export const trackEvent = async (element: string, details?: string) => {
+  await api.post("/track/update", {
+    element,
+    details,
+  });
 };
