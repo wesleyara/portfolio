@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import { trackEvent } from "~/utils";
 import { mapProjects } from "~/utils/constants";
 
-const handleOpenLink = (repository: string) => {
+const handleOpenLink = (repository: string, title: string) => {
+  const details = title.toLowerCase().replace(/\s/g, "-");
+
+  trackEvent({
+    element: `projects:${details}`,
+    schema: "projects",
+  });
   open(repository);
 };
 </script>
@@ -20,6 +27,12 @@ const handleOpenLink = (repository: string) => {
           :src="item.image"
           :alt="item.title"
           class="w-full rounded-lg"
+          @click="
+            handleOpenLink(
+              item.preview.length > 0 ? item.preview : item.repository,
+              item.title,
+            )
+          "
         />
         <h3>{{ item.title }}</h3>
 
@@ -29,7 +42,7 @@ const handleOpenLink = (repository: string) => {
           name="mdi:github"
           class="absolute bottom-2 left-4 cursor-pointer text-emerald-500"
           size="26"
-          @click="handleOpenLink(item.repository)"
+          @click="handleOpenLink(item.repository, item.title)"
         />
 
         <Icon
@@ -37,7 +50,7 @@ const handleOpenLink = (repository: string) => {
           name="icon-park-outline:preview-open"
           class="absolute bottom-2 left-12 cursor-pointer text-emerald-500"
           size="26"
-          @click="handleOpenLink(item.preview)"
+          @click="handleOpenLink(item.preview, item.title)"
         />
       </span>
     </div>

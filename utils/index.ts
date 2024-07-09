@@ -1,4 +1,5 @@
 import { api } from "~/lib/axios";
+import type { TrackEventProps } from "~/types";
 
 export const formatDate = (date: Date) => {
   const now = new Date();
@@ -31,9 +32,13 @@ export const handleNavigate = (url: string) => {
   open(url);
 };
 
-export const trackEvent = async (element: string, details?: string) => {
-  await api.post("/track/update", {
-    element,
-    details,
-  });
+export const trackEvent = async ({ element, schema }: TrackEventProps) => {
+  try {
+    await api.post("/track/update", {
+      element,
+      schema,
+    });
+  } catch (error: any) {
+    console.error(error.message);
+  }
 };

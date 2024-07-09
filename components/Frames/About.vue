@@ -1,12 +1,19 @@
 <script setup lang="ts">
 import { trackEvent } from "~/utils";
 import { learnMoreMap } from "~/utils/constants";
+
+const handleTrackEvent = () => {
+  trackEvent({
+    element: "about",
+    schema: "about",
+  });
+};
 </script>
 
 <template>
   <section class="window-width mx-auto my-10 flex flex-col gap-5">
     <h2 id="about" class="text-emerald-500">Sobre</h2>
-    <UAccordion :items="learnMoreMap" @click="trackEvent('about')">
+    <UAccordion :items="learnMoreMap" @click="handleTrackEvent">
       <template #formation>
         <ul>
           <li>

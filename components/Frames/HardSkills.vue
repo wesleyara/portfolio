@@ -1,5 +1,15 @@
 <script setup lang="ts">
+import { trackEvent } from "~/utils";
 import { hardSkills } from "~/utils/constants";
+
+const handleTrackEvent = (title: string) => {
+  const details = title.toLowerCase().replace(/\s/g, "-");
+
+  trackEvent({
+    element: `skills:${details}`,
+    schema: "skills",
+  });
+};
 </script>
 
 <template>
@@ -11,6 +21,7 @@ import { hardSkills } from "~/utils/constants";
         v-for="item of hardSkills"
         :key="item.name"
         class="flex h-[250px] w-full flex-col gap-5 rounded-lg bg-[#172435] p-5 text-white md:w-[300px]"
+        @click="handleTrackEvent(item.name)"
       >
         <Icon :name="item.icon" size="40" class="text-emerald-500" />
 
