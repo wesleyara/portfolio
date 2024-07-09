@@ -1,10 +1,10 @@
 import { prisma } from "~/lib/prisma";
 
 export default defineEventHandler(async event => {
-  const { element, details } = await readBody(event);
+  const { element, schema } = await readBody(event);
 
-  if (!element) {
-    return { status: 400, message: "Element is required" };
+  if (!element || !schema) {
+    return { status: 400, message: "Error, element and schema are required" };
   }
 
   const trackExists = await prisma.track.findUnique({
@@ -20,7 +20,6 @@ export default defineEventHandler(async event => {
       },
       data: {
         count: trackExists.count + 1,
-        details,
       },
     });
 
@@ -31,7 +30,7 @@ export default defineEventHandler(async event => {
     data: {
       element,
       count: 1,
-      details,
+      schema,
     },
   });
 
