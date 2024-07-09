@@ -1,4 +1,4 @@
-import { prisma } from "~/prisma/prismaClient";
+import { prisma } from "~/lib/prisma";
 
 export default defineEventHandler(async () => {
   const response = await prisma.track.findMany();

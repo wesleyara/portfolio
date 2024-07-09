@@ -1,4 +1,4 @@
-import { prisma } from "~/prisma/prismaClient";
+import { prisma } from "~/lib/prisma";
 
 export default defineEventHandler(async event => {
   const { element, details } = await readBody(event);
