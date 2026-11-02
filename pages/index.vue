@@ -1,13 +1,14 @@
-<script setup lang="ts"></script>
-
 <template>
   <div>
-    <TheHeader ref="target" />
-    <FramesHome />
-    <FramesAbout />
-    <FramesProjects />
-    <FramesHardSkills />
-    <FramesContact />
+    <TheHeader />
+    <main id="inicio" class="wrap">
+      <FramesHome />
+      <FramesAbout />
+      <FramesProjects />
+      <FramesOpenSource />
+      <FramesStack />
+      <FramesContact />
+    </main>
     <TheFooter />
   </div>
 </template>

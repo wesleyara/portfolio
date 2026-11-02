@@ -1,64 +1,50 @@
 <script setup lang="ts">
-import { handleNavigate } from "~/utils/";
+import { EMAIL, socialLinks } from "~/utils/constants";
+
+const { t } = useI18n();
+
+const emailEl = ref<HTMLElement | null>(null);
+const copyState = ref("");
+
+const selectEmail = () => {
+  if (!emailEl.value) return;
+  const range = document.createRange();
+  range.selectNodeContents(emailEl.value);
+  const selection = window.getSelection();
+  selection?.removeAllRanges();
+  selection?.addRange(range);
+  copyState.value = t("contact.selected");
+};
+
+const copyEmail = async () => {
+  try {
+    await navigator.clipboard.writeText(EMAIL);
+    copyState.value = t("contact.copied");
+  } catch {
+    selectEmail();
+  }
+};
 </script>
 
 <template>
-  <section class="window-width mx-auto my-10 flex flex-col gap-5">
-    <h2 id="contact" class="text-emerald-500">Contato</h2>
-
-    <span
-      class="flex flex-col flex-wrap items-center gap-8 md:flex-row md:justify-between md:gap-0"
-    >
-      <span class="flex w-[235px] flex-col items-center gap-1">
-        <Icon
-          name="mdi:gmail"
-          size="50"
-          class="cursor-pointer text-emerald-500"
-          @click="handleNavigate('mailto:wesleyara.contato@gmail.com')"
-        />
-        <span
-          class="underline"
-          @click="handleNavigate('mailto:wesleyara.contato@gmail.com')"
-        >
-          wesleyara.contato@gmail.com
-        </span>
-
-        <span>Me envie um email!</span>
-      </span>
-
-      <span class="flex w-[235px] flex-col items-center gap-1">
-        <Icon
-          name="mdi:linkedin"
-          size="50"
-          class="cursor-pointer text-emerald-500"
-          @click="handleNavigate('https://www.linkedin.com/in/wesley-ara/')"
-        />
-        <span
-          class="underline"
-          @click="handleNavigate('https://www.linkedin.com/in/wesley-ara/')"
-        >
-          Wesley Araújo
-        </span>
-
-        <span>Vamos nos conectar!</span>
-      </span>
-
-      <span class="flex w-[235px] flex-col items-center gap-1">
-        <Icon
-          name="mdi:github"
-          size="50"
-          class="cursor-pointer text-emerald-500"
-          @click="handleNavigate('https://github.com/wesleyara')"
-        />
-        <span
-          class="underline"
-          @click="handleNavigate('https://github.com/wesleyara')"
-        >
-          wesleyara
-        </span>
-
-        <span>Veja alguns dos meus projetos!</span>
-      </span>
-    </span>
+  <section id="contato" class="contact">
+    <div class="sec-path">{{ t("contact.path") }}</div>
+    <h2>{{ t("contact.title") }}</h2>
+    <div class="mail">
+      <code ref="emailEl">{{ EMAIL }}</code>
+      <button class="btn" type="button" @click="copyEmail">
+        {{ t("contact.copy") }}
+      </button>
+      <span class="copy-state" aria-live="polite">{{ copyState }}</span>
+    </div>
+    <div class="socials">
+      <a class="btn" :href="`mailto:${EMAIL}`">Email ↗</a>
+      <a class="btn" :href="socialLinks.github" target="_blank" rel="noopener"
+        >GitHub ↗</a
+      >
+      <a class="btn" :href="socialLinks.linkedin" target="_blank" rel="noopener"
+        >LinkedIn ↗</a
+      >
+    </div>
   </section>
 </template>

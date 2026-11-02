@@ -1,58 +1,86 @@
 <script setup lang="ts">
-import { trackEvent } from "~/utils";
-import { mapProjects } from "~/utils/constants";
+import { featuredProjects, moreProjects } from "~/utils/constants";
+import { pick } from "~/utils";
 
-const handleOpenLink = (repository: string, title: string) => {
-  const details = title.toLowerCase().replace(/\s/g, "-");
-
-  trackEvent({
-    element: `projects:${details}`,
-    schema: "projects",
-  });
-  open(repository);
-};
+const { t, locale } = useI18n();
 </script>
 
 <template>
-  <section class="window-width mx-auto my-10 flex flex-col gap-5">
-    <h2 id="projects" class="text-emerald-500">Projetos</h2>
+  <section id="projetos">
+    <div class="sec-head">
+      <div>
+        <div class="sec-path">{{ t("projects.path") }}</div>
+        <h2>{{ t("projects.title") }}</h2>
+      </div>
+      <p class="sec-note">{{ t("projects.note") }}</p>
+    </div>
 
-    <div class="flex w-full flex-wrap justify-center gap-10">
-      <span
-        v-for="item of mapProjects"
-        :key="item.id"
-        class="relative flex w-full flex-col gap-5 rounded-lg bg-[#172435] px-5 pb-12 pt-5 text-white md:w-[300px]"
+    <div class="grid">
+      <article
+        v-for="project of featuredProjects"
+        :key="project.name"
+        class="card"
       >
-        <NuxtImg
-          :src="item.image"
-          :alt="item.title"
-          class="w-full rounded-lg"
-          @click="
-            handleOpenLink(
-              item.preview.length > 0 ? item.preview : item.repository,
-              item.title,
-            )
-          "
-        />
-        <h3>{{ item.title }}</h3>
+        <div class="media">
+          <img
+            v-if="project.image"
+            :src="project.image.src"
+            :alt="pick(project.image.alt, locale)"
+            width="1200"
+            height="675"
+            loading="lazy"
+            decoding="async"
+          />
+          <template v-else-if="project.snippet">
+            <span class="file">{{ project.snippet.file }}</span>
+            <!-- eslint-disable-next-line vue/no-v-html -- static, trusted snippet from constants -->
+            <pre v-html="project.snippet.html"></pre>
+          </template>
+        </div>
+        <div class="body">
+          <div class="card-head">
+            <h3>{{ project.name }}</h3>
+            <span class="kind">{{ pick(project.kind, locale) }}</span>
+          </div>
+          <p>{{ pick(project.description, locale) }}</p>
+          <div class="chips">
+            <span v-for="tech of project.stack" :key="tech" class="chip">{{
+              tech
+            }}</span>
+          </div>
+          <div class="links">
+            <a :href="project.repository" target="_blank" rel="noopener"
+              >repo ↗</a
+            >
+            <a
+              v-if="project.link"
+              :href="project.link.href"
+              target="_blank"
+              rel="noopener"
+            >
+              {{ project.link.label }} ↗
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
 
-        <span>{{ item.description }}</span>
-
-        <Icon
-          name="mdi:github"
-          class="absolute bottom-2 left-4 cursor-pointer text-emerald-500"
-          size="26"
-          @click="handleOpenLink(item.repository, item.title)"
-        />
-
-        <Icon
-          v-if="item.preview.length > 0"
-          name="icon-park-outline:preview-open"
-          class="absolute bottom-2 left-12 cursor-pointer text-emerald-500"
-          size="26"
-          @click="handleOpenLink(item.preview, item.title)"
-        />
-      </span>
+    <div class="index">
+      <h3>{{ t("projects.more") }}</h3>
+      <div class="rows">
+        <a
+          v-for="project of moreProjects"
+          :key="project.name"
+          class="row"
+          :href="project.href"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="n">{{ project.name }}</span>
+          <span class="d">{{ pick(project.description, locale) }}</span>
+          <span class="l">{{ project.tag }}</span>
+        </a>
+      </div>
     </div>
   </section>
 </template>

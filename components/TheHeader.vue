@@ -1,30 +1,37 @@
 <script setup lang="ts">
-import { linkMap } from "~/utils/constants";
+import { navLinks } from "~/utils/constants";
 
-const handleScrollToId = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-};
+const { t, locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 </script>
 
 <template>
-  <header class="window-width mx-auto flex items-center justify-between">
-    <h3 class="flex items-center justify-center gap-2 py-5">
-      <Icon name="carbon:3d-mpr-toggle" class="text-emerald-500" /> Wesley
-      Araújo
-    </h3>
-
-    <nav class="hidden md:flex">
-      <span
-        v-for="item of linkMap"
-        :key="item.label"
-        class="cursor-pointer px-4 py-2 hover:underline"
-        @click="handleScrollToId(item.href)"
-      >
-        {{ item.label }}
-      </span>
-    </nav>
+  <header class="top">
+    <div class="wrap">
+      <NuxtLink class="logo" :to="localePath('/')">~/<b>wesleyara</b></NuxtLink>
+      <nav class="nav" :aria-label="t('nav.sections')">
+        <a v-for="link of navLinks" :key="link.id" :href="`#${link.id}`">
+          {{ t(link.key) }}
+        </a>
+      </nav>
+      <div class="lang" role="group" :aria-label="t('nav.language')">
+        <NuxtLink
+          v-for="item of locales"
+          :key="typeof item === 'string' ? item : item.code"
+          :to="switchLocalePath(typeof item === 'string' ? item : item.code)"
+          :class="{
+            active: (typeof item === 'string' ? item : item.code) === locale,
+          }"
+          :aria-current="
+            (typeof item === 'string' ? item : item.code) === locale
+              ? 'true'
+              : undefined
+          "
+        >
+          {{ (typeof item === "string" ? item : item.code).toUpperCase() }}
+        </NuxtLink>
+      </div>
+    </div>
   </header>
 </template>

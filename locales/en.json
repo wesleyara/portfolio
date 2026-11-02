@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Wesley Araújo · Software architect",
+    "description": "Portfolio of Wesley Araújo, software architect and full stack developer in Recife, Brazil. Open source projects, experience and stack."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "openSource": "Open source",
+    "stack": "Stack",
+    "contact": "Contact",
+    "sections": "Sections",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Software architect · Full stack · Recife, Brazil",
+    "title": "I design clear systems, from database to",
+    "titleAccent": "interface",
+    "ledeBefore": "Software architect and full stack developer for",
+    "ledeStrong": "5+ years",
+    "ledeAfter": ". Outside work, I publish open source tools that run on your own machine.",
+    "cta": "See projects",
+    "terminalEmpty": "(empty, and that's fine)",
+    "terminalLabel": "Illustrative terminal"
+  },
+  "about": {
+    "path": "~/about",
+    "title": "From the classroom to architecture",
+    "p1": "I'm from Pernambuco, Brazil. I studied Mathematics and taught it before becoming a developer. The classroom taught me to explain complex things simply, and that's what I try to do with code: clear, documented systems that are easy to maintain.",
+    "p2": "Today I'm a software architect at ONR, helping teams set standards, integrate systems and clarify concepts day to day. Before that, at Apex NFT, I worked on Castles NFT, one of the most popular games on the WAX blockchain, and gave a talk on NFTs and crypto at SEBRAE's booth at Trakto Show.",
+    "p3": "I'm an open source enthusiast, which is why so many of my projects are local tools with no account and no cloud, that anyone can clone and run.",
+    "experience": "// experience",
+    "education": "Education: B.Ed. in Mathematics, UPE (2017–2021) · Systems Analysis and Development, Estácio (2024–2026)"
+  },
+  "projects": {
+    "path": "~/projects",
+    "title": "Featured projects",
+    "note": "All open source. The most recent ones run entirely on your machine.",
+    "more": "// more projects"
+  },
+  "openSource": {
+    "path": "~/open-source",
+    "title": "GitHub activity",
+    "note": "Live data from the public GitHub API.",
+    "repos": "public repositories",
+    "localFirst": "local-first tools",
+    "libs": "open source libraries",
+    "feedFoot": "recently updated repositories",
+    "fallback": "GitHub API unavailable, showing the last saved list",
+    "commits": "commits in {year}"
+  },
+  "stack": {
+    "path": "~/stack",
+    "title": "What I work with",
+    "frontend": "frontend",
+    "backend": "backend",
+    "infra": "infra & architecture"
+  },
+  "contact": {
+    "path": "~/contact",
+    "title": "Got a project, a role or an idea? Let's talk.",
+    "copy": "Copy email",
+    "copied": "copied",
+    "selected": "selected, press Ctrl+C"
+  },
+  "footer": {
+    "made": "made in Pernambuco"
+  }
+}

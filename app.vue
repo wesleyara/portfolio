@@ -1,32 +1,26 @@
 <script setup lang="ts">
-useSeoMeta({
-  title: "Portfólio - Wesley Araújo",
-  description: "Portfólio do Desenvolvedor Wesley Araújo",
-  ogTitle: "Portfólio - Wesley Araújo",
-  ogDescription: "Portfólio do Desenvolvedor Wesley Araújo",
-  ogImage: "https://wesleyaraujo.dev/favicon.png",
-  ogImageUrl: "https://wesleyaraujo.dev/favicon.png",
-});
+const { t } = useI18n();
+const i18nHead = useLocaleHead({ addSeoAttributes: true });
 
-useHead({
-  htmlAttrs: {
-    lang: "en",
-  },
-  link: [
-    {
-      rel: "icon",
-      type: "image/svg",
-      href: "/favicon.svg",
-    },
+useHead(() => ({
+  htmlAttrs: { lang: i18nHead.value.htmlAttrs?.lang },
+  link: [...(i18nHead.value.link || [])],
+  meta: [
+    ...(i18nHead.value.meta || []),
+    { name: "theme-color", content: "#0b0f0e" },
   ],
+}));
+
+useSeoMeta({
+  title: () => t("meta.title"),
+  description: () => t("meta.description"),
+  ogTitle: () => t("meta.title"),
+  ogDescription: () => t("meta.description"),
+  ogImage: "https://wesleyaraujo.dev/favicon.png",
+  twitterCard: "summary",
 });
 </script>
 
 <template>
   <NuxtPage />
 </template>
-
-<style lang="scss">
-@use "~/assets/css/typography.scss";
-@use "~/assets/css/globals.scss";
-</style>
