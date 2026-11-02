@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Wesley Araújo · Arquiteto de software",
+    "description": "Portfólio de Wesley Araújo, arquiteto de software e desenvolvedor full stack em Recife. Projetos open source, experiência e stack."
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "openSource": "Open source",
+    "stack": "Stack",
+    "contact": "Contato",
+    "sections": "Seções",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Arquiteto de software · Full stack · Recife, PE",
+    "title": "Desenho sistemas claros, do banco à",
+    "titleAccent": "interface",
+    "ledeBefore": "Arquiteto de software e full stack há",
+    "ledeStrong": "mais de 5 anos",
+    "ledeAfter": ". Fora do trabalho, publico ferramentas open source que rodam na sua máquina.",
+    "cta": "Ver projetos",
+    "terminalEmpty": "(vazio, e está tudo bem)",
+    "terminalLabel": "Terminal ilustrativo"
+  },
+  "about": {
+    "path": "~/sobre",
+    "title": "Da sala de aula à arquitetura",
+    "p1": "Sou pernambucano, formado em Matemática e fui professor antes de virar desenvolvedor. A sala de aula me ensinou a explicar coisas complexas de um jeito simples, e é isso que tento fazer com código: sistemas claros, documentados e fáceis de manter.",
+    "p2": "Hoje sou arquiteto de software na ONR, ajudando times a definir padrões, integrar sistemas e esclarecer conceitos no dia a dia. Antes, na Apex NFT, contribuí com o Castles NFT, um dos jogos mais populares da blockchain WAX, e já dei palestra sobre NFTs e criptomoedas no stand do SEBRAE no Trakto Show.",
+    "p3": "Sou entusiasta de open source, por isso tantos dos meus projetos são ferramentas locais, sem conta e sem nuvem, que qualquer pessoa pode clonar e rodar.",
+    "experience": "// experiência",
+    "education": "Formação: Licenciatura em Matemática, UPE (2017–2021) · CST em Análise e Desenvolvimento de Sistemas, Estácio (2024–2026)"
+  },
+  "projects": {
+    "path": "~/projetos",
+    "title": "Projetos em destaque",
+    "note": "Tudo open source. Os mais recentes rodam inteiros na sua máquina.",
+    "more": "// outros projetos"
+  },
+  "openSource": {
+    "path": "~/open-source",
+    "title": "Atividade no GitHub",
+    "note": "Dados ao vivo da API pública do GitHub.",
+    "repos": "repositórios públicos",
+    "localFirst": "ferramentas local-first",
+    "libs": "bibliotecas open source",
+    "feedFoot": "últimos repositórios atualizados",
+    "fallback": "API do GitHub indisponível, mostrando a última lista salva",
+    "commits": "commits em {year}"
+  },
+  "stack": {
+    "path": "~/stack",
+    "title": "Com o que eu trabalho",
+    "frontend": "frontend",
+    "backend": "backend",
+    "infra": "infra & arquitetura"
+  },
+  "contact": {
+    "path": "~/contato",
+    "title": "Tem um projeto, uma vaga ou uma ideia? Vamos conversar.",
+    "copy": "Copiar email",
+    "copied": "copiado",
+    "selected": "selecionado, use Ctrl+C"
+  },
+  "footer": {
+    "made": "feito em Pernambuco"
+  }
+}
