@@ -7,6 +7,10 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/globals.css"],
 
+  postcss: {
+    plugins: { "tailwindcss/nesting": false },
+  },
+
   googleFonts: {
     families: {
       "Bricolage Grotesque": [500, 700, 800],
@@ -21,7 +25,6 @@ export default defineNuxtConfig({
     strategy: "prefix_except_default",
     defaultLocale: "pt",
     detectBrowserLanguage: false,
-    langDir: "locales",
     locales: [
       { code: "pt", language: "pt-BR", file: "pt.json", name: "PT" },
       { code: "en", language: "en-US", file: "en.json", name: "EN" },
@@ -34,5 +37,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: "2024-07-09",
+  compatibilityDate: "2026-11-01",
 });
